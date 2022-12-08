@@ -1,0 +1,39 @@
+<!--pages/my-message/my-message.wxml-->
+<!-- 我的信息的包裹器 start -->
+<view class="messageComtainer">
+  <!-- 头部头像 start -->
+  <view class="header">
+      <text class="text">头像</text>
+      <view>
+        <image></image>
+        <text class="text icon">></text>
+      </view>
+  <!-- 头部头像 end -->    
+  </view>
+  <!-- 中间姓名 start -->
+  <view class="nameTop">
+    <text class="text">姓名</text>
+    <view>
+      <text class="name">张三</text>
+      <text class="icon">></text>
+    </view>
+  <!-- 中间姓名 end -->
+  </view>
+  <!-- 底部手机号码 start -->
+  <view class="number">
+    <text class="text">手机号</text>
+    <view>
+      <text class="name">188xxxx8888</text>
+      <text class="icon">></text>
+    </view>
+  <!-- 底部手机号码 end -->
+  </view>
+  <!-- 按钮 start -->
+  <view>
+      <button class="confirm-btn" >退出登录</button>
+  <!-- 按钮 end -->
+  </view>
+<!-- 我的信息的包裹器 end -->
+</view>
+
+   

@@ -1,0 +1,44 @@
+/* pages/HeadTeacher/excellent/excellent.wxss *//* 内容区 */
+.Container{
+  background-color: rgba(255, 255, 255, 1);
+  }
+  .containerbox .containerList .group{
+    display: inline-flex;
+    flex-direction: column;
+    width: 220rpx;
+    margin: 10rpx;
+  }
+  .containerList{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30rpx;
+  }
+   .group checkbox{
+     margin-bottom: 20rpx;
+     /* 修改复选框的大小 */
+     transform: scale(0.6,0.6);
+     font-size: 40rpx;
+     
+   }
+   /* 卓越少年名单区 */
+  .Container .list {
+     font-size: 24rpx;
+     color: rgba(153, 153, 153, 1);
+     font-family: PingFangSC-regular;
+     margin-left: 40rpx;
+     margin-top: 32rpx;
+   }
+   /*按钮区  */
+    .btn{
+      background-color: rgba(124, 0, 0, 1);
+      border: 1px solid rgba(187, 187, 187, 1);
+      color: rgba(255, 255, 255, 1);
+      border-radius: 40rpx;
+      line-height: 30rpx;
+      text-align: center;
+      font-size: 32rpx;
+      font-family: PingFangSC-regular;
+      margin-top: 50rpx;
+  
+   } 

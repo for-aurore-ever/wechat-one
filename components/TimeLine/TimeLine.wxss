@@ -1,0 +1,65 @@
+/* components/time-line/time-line.wxss */
+.box {
+  padding: 30rpx;
+}
+.one {
+  position: relative;
+  padding-bottom: 40rpx;
+}
+.onedotActive {
+  left: -2rpx;
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  background-color: #7a0002;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.onedotNoActive{
+  left: -2rpx;
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  background-color: #999999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.oneline {
+  position: absolute;
+  left: 8rpx;
+  height: 100%;
+  border-left: 2px dashed #c8c8c8;
+}
+.onemain {
+  position: relative;
+  padding-left: 56rpx;
+  top: -6rpx;
+  justify-content: space-between
+}
+.onemaintitle {
+  margin-bottom: 16rpx;
+  padding-top: 8rpx;
+  color:#101010;
+  line-height: 1;
+  font-size: 28rpx;
+  font-weight: 545;
+  float: left;
+}
+.onemainstate{
+  float: right;
+  font-size: 26rpx;
+  margin-right:220rpx;
+  color: #7a0002;
+  border: 2rpx solid #7a0002;
+  border-radius: 10rpx;
+  padding:5rpx 20rpx;
+}
+.onemaincon {
+  color: #303133;
+}

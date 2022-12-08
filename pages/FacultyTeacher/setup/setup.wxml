@@ -1,0 +1,24 @@
+<!--pages/setup/setup.wxml-->
+<!-- 学生荣誉 -->
+<view class="Countainer">
+  <view class="box">
+  <text class="type1">新消息提醒</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+  <view class="box">
+  <text class="type2">账号与安全</text>
+  <text class="iconfont icon-guanbi"style="color:#acacac"></text>
+  </view>
+  <view class="box">
+  <text class="type3">消息缓存</text>
+  <view class="store">
+  <text>23.5K</text>
+  </view>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+   <view class="box">
+  <text class="type4">关于我们</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+</view>
+

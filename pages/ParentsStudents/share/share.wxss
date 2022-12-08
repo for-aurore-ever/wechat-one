@@ -1,0 +1,76 @@
+
+page{
+  background: #f7f8fa;
+}
+/* 底部下拉弹窗区域 */
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: 25%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+}
+/* 两个图标和按钮包裹器 */
+.iconContainer{
+  display: flex;
+}
+/* 图标大区域 */
+.icons{
+  text-align: center;
+  width: 50%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top:30rpx ;
+  line-height: 80rpx;
+}
+/* 单个图标 */
+.icons icon{
+  width: 50%;
+  margin: 0 auto;
+}
+/* 按钮包裹区 */
+.btnContainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+/* 按钮 */
+.btnContainer .btn1{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#fff;
+  line-height: 100rpx;
+  border-bottom: 2rpx  solid #e6e6e6;
+  border-top: 2rpx  solid #e6e6e6;
+  border-radius: 0;
+}
+
+

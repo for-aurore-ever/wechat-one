@@ -1,0 +1,13 @@
+<!--pages/HeadTeacher/photos/photos.wxml-->
+<!--班级图库-->
+<view class="Countainer">
+  <view class="student1" bindtap="togallery">
+  <text>202201</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+  <view class="student2">
+  <text>202202</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+</view>
+

@@ -1,0 +1,43 @@
+<!--pages/my-kids/my-kids.wxml-->
+<view class="myKidsContainer">
+  <view class="kid">
+    <view class="imageContainer">
+      <image></image>
+      <view class="nameContainer">
+        <text class="name">张小小</text>
+        <text class="icon">></text>
+      </view>
+    </view>
+
+    <view class="messageContainer">
+      <view>
+        <text>一年3班</text>
+      </view>
+      <view>
+        <text>身份证号:332502********8888</text>
+      </view>
+    </view>
+  </view>
+  <view class="kid">
+    <view class="imageContainer">
+      <image></image>
+      <view class="nameContainer">
+        <text class="name">张小小</text>
+        <text class="icon">></text>
+      </view>
+    </view>
+
+    <view class="messageContainer">
+      <view>
+        <text>一年3班</text>
+      </view>
+      <view>
+        <text>身份证号:332502********8888</text>
+      </view>
+    </view>
+  </view>
+    <view class="btn">
+      <button class="confirm-btn" >+ 添加孩子</button>
+    </view>
+
+</view>

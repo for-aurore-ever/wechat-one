@@ -1,0 +1,78 @@
+/* pages/award/award.wxss */
+page{
+  background-color: rgba(247, 248, 250, 1);
+  position: relative;
+}
+.Countainer{
+    height: 100%;
+    position: absolute;
+}
+.background image{
+  display: flex;
+  margin: 0 auto;
+  height: 1000rpx;
+  padding: 30rpx 30rpx;
+  position: relative;
+   z-index: 1;
+  width: 700rpx;
+  margin-bottom: 80rpx;
+}
+
+.award1{
+   position: absolute;
+   height: 200rpx;
+   width: 500rpx;
+   z-index: 2;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  margin-top: 180rpx;
+}
+.award2{
+   position: absolute;
+   height: 200rpx;
+   width: 500rpx;
+   z-index: 2;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  margin-top: 420rpx;
+}
+.award3{
+   position: absolute;
+   height: 200rpx;
+   width: 500rpx;
+   z-index: 2;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  margin-top: 670rpx;
+}
+/*.word1{
+ position: absolute;
+z-index: 3;
+height: 50rpx;
+width: 160rpx;
+left: 0;top: 0;right: 0;
+margin: auto;
+margin-top: 260rpx;
+margin-left: 330rpx;
+}
+.word2{
+  position: absolute;
+  z-index: 3;
+  height: 50rpx;
+  width: 160rpx;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了
+  margin-left: 330rpx;
+  margin-top: 500rpx;
+}
+.word3{
+  position: absolute;
+  z-index: 3;
+  height: 50rpx;
+  width: 160rpx;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了
+  margin-top: 750rpx;
+  margin-left: 330rpx;
+
+}*/

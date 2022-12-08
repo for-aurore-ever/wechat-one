@@ -1,0 +1,87 @@
+.userinfo {
+  display: flex;
+  font-size: 40rpx;
+  color: #101010;
+  font-weight: 900;
+  padding-top: 70rpx;
+  padding-left: 50rpx;
+}
+.weui-cell_input{
+  width: 650rpx;
+  padding-left: 50rpx;
+}
+.weui-input{
+  padding-top: 60rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid  #999999;
+  
+
+}
+.confirm-btn{
+   width: 630rpx!important;
+  height: 76rpx; 
+  line-height: 76rpx; 
+   border-radius: 50rpx; 
+  margin-top: 130rpx;
+   background: #7c0000;
+  color: #fff;
+  font-size: 32rpx; 
+  padding: 0;
+}
+.option-list {
+  background: white;
+  padding: 0 40rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+}
+ 
+.radio-group {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.radio-group .radio {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+ 
+.radio-group .radio text {
+  margin-left: -5rpx;
+}
+ 
+radio {
+  transform: scale(0.6);
+}
+ 
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+ 
+radio .wx-radio-input.wx-radio-input-checked {
+  /* border: none; */
+  border-color: rgb(190, 54, 54) !important;
+  /* background-color: #fff!important; *//* background-color: transparent!important; *//* 居中 *//* 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+}
+ 
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+ 
+radio .wx-radio-input.wx-radio-input-checked::before {
+  /* 去除对号 */
+  content: '';
+  /* background: #fff; */
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  /* background: red; */
+  background-color: gray;
+  /* 居中 *//* margin-top: 0rpx; *//* display: flex; *//* position: relative; */
+}

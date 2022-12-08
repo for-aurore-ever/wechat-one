@@ -1,0 +1,283 @@
+/* pages/HeadTeacher/student/student.wxss */
+page{
+  background-color:#f7f8fa
+}
+
+.continer .personal{
+  display: flex;
+  height:150rpx;
+  font-size:28rpx;
+  justify-content:space-between; /*使页面的>符移到右边*/
+  padding: 20rpx 20rpx;
+  background-color: #fff;
+  margin: 10rpx 10rpx;
+  line-height: 50rpx
+}
+.continer .personal .name{
+  font-size: 32rpx;
+  margin-top: 10rpx;
+  margin-left: 25rpx;
+}
+
+.continer .personal .symbol{
+  font-size: 32rpx;
+  margin-top: 41rpx;
+  margin-left: 30rpx;
+}
+
+.continer .personal .personalx .img{
+  height: 132rpx;
+  width: 132rpx;
+  border-radius: 50%;
+  margin-left: 40rpx;
+}
+.continer .personal .gender{
+  height: 65rpx;
+  width: 150rpx;
+  margin:10rpx;
+}
+.Continer .changes{
+  margin-top: 5rpx;
+  margin-left:570rpx;
+}
+.Continer .change{
+  color: #7c0000;
+  /* margin-bottom:20rpx;  */
+  /*padding-bottom: 10rpx;*/
+  font-size:30rpx;
+  line-height: 50rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  margin: 10rpx;
+}
+.continer{
+  
+}
+.Continer{
+  margin-top: 25rpx;
+  background-color: #fff;
+}
+.continer .recommendScroll{
+  background-color: #fff;
+}
+.continer .recommendScroll .scrollItem{
+  width: 100%;
+  height: 414rpx
+}
+.continer .recommendScroll .scrollItem image {
+  /* margin-top: 108rpx; */
+  width: 302rpx;
+  height: 414rpx;
+  /* margin-left: 152rpx; */
+}
+
+.continer .recommendScroll .scrollItem2 image {
+  margin-top: 108rpx;
+  width: 302rpx;
+  height: 414rpx;
+  margin-left: 152rpx;
+}
+.continer .recommendScroll .scrollItem .make{
+  width: 120rpx;
+  height: 48rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 1rpx solid #7c0000;
+  border-radius: 5%;
+  margin-left: 48rpx;
+  color: #7c0000
+}
+
+.continer .recommendScroll .scrollItem .xuenian{
+  margin-left: 152rpx;
+  margin-top: 150rpx;
+}
+/* pages/report1/report1.wxss */
+page{
+  background-color:#f7f8fa
+}
+/*整个页面*/
+.continer{
+  height:100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*名字区*/
+.name{
+  display: flex;
+  height: 80rpx;
+  width: 400rpx;
+}
+.nameContainer{
+  display: flex;
+  /* justify-content:space-between; */
+  /* align-items: center; */
+  margin-left: 20rpx;
+}
+.header{
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  margin-left: 30rpx;
+  margin-top: 5rpx;
+  align-items: center;
+  
+}
+.word{
+  height:80rpx;
+  width: 700rpx;
+}
+/*张大大*/
+/*右边切换模式框*/
+.changes{
+  width: 200rpx;
+  line-height: 80rpx;
+  font-size:24rpx;
+}
+/*文字切换模式*/
+.Continer .change{
+  color: #7c0000;
+  /* margin-bottom:20rpx;  */
+  /*padding-bottom: 10rpx;*/
+  font-size:24rpx;
+  line-height: 50rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  margin: 10rpx;
+}
+/*头部导航框*/
+.Continer{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rpx;
+  background-color: #fff;
+  height:100rpx;
+}
+/*成长报告框*/
+.box {
+  padding: 30rpx;
+  background-color: #fff;
+}
+/*一份成产报告框*/
+.one {
+  position: relative;
+  padding-bottom: 40rpx;
+}
+/*第一份成长报告的圆点/制作中的成长报告的圆点*/
+.onedotActive {
+  left: -2rpx;
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  background-color: #7C0000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+/*第二份完成的成长报告的圆点*/
+.onedotNoActive{
+  left: -2rpx;
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  background-color: #999999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+/*虚线*/
+.oneline {
+  position: absolute;
+  left: 8rpx;
+  height: 100%;
+  border-left: 2px dashed #c8c8c8;
+}
+/*成长报告盒子*/
+.onemain {
+  position: relative;
+  padding-left: 56rpx;
+  top: -6rpx;
+  justify-content: space-between
+}
+/*学期*/
+.onemaintitle {
+  margin-bottom: 16rpx;
+  padding-top: 8rpx;
+  color:#101010;
+  line-height: 1;
+  font-size: 28rpx;
+  font-weight: 545;
+  float: left;
+}
+/*制作中*/
+.onemainstate{
+  float: right;
+  font-size: 26rpx;
+  margin-right:220rpx;
+  color: #7a0002;
+  border: 2rpx solid #7a0002;
+  border-radius: 10rpx;
+  padding:5rpx 20rpx;
+}
+/*第二份成长报告框*/
+.onemaincon {
+  color: #303133;
+}
+/*制作中的照片框*/
+.photo{
+  height: 414rpx;
+  width: 302rpx;
+  border: 2px dashed #7C0000;
+   position: relative;
+}
+
+/*完成的照片框*/
+.photo1{
+  height: 414rpx;
+  width: 302rpx;
+  border: 2px dashed #c8c8c8;
+}
+/*制作中的成长报告图*/
+.photo image{
+  height: 414rpx!important;
+  width: 302rpx!important;
+}
+/*制作中的成长报告*/
+.photo1 image{
+  height: 414rpx!important;
+  width: 302rpx!important;
+}
+/*成长报告上面的文字、
+flex-wrap: wrap;换行
+position: absolute;相对于父元素的定位，但是没有父元素则相对于窗口定位，可以将设置的元素摆在容纳它的容器的任何位置，因为它的显示位置由 top、left、right 和 bottom 等属性决定。
+relative是相对定位，相对于自己本身定位，这个定位一般是和absolute一起使用。absoleute绝对定位的意思是说，它的定位不受父元素中其他元素的影响。relative相对定位，就是会受到父元素中其他元素影响。
+*/
+.message{
+display: flex;
+position: absolute;
+flex-wrap: wrap; 
+height: 100rpx;
+/* width: 120rpx; */
+bottom: 0;
+font-size:20rpx;
+margin-bottom: 14rpx;
+margin-left: 230rpx;
+font-weight: 600;
+}
+/*名字*/
+.messgae1{
+  height:26rpx;
+}
+/*班级*/
+.message2{
+  margin-bottom: 100rpx;
+}
+

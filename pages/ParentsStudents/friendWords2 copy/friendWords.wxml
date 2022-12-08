@@ -1,0 +1,59 @@
+<!--pages/friendWords/friendWords.wxml-->
+<!--pages/isMe1/isMe1.wxml-->
+<view class="Continer">
+
+<!--上半区导航页面-->
+<view class="gander">
+  <view class="gender">
+    <text class="semester">小伙伴的话</text>
+  </view>
+  <view class="changes">
+    <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+    <text class="change">形式切换</text>
+  </view>
+</view>
+ <!--下半区展示区域页面-->
+ <scroll-view class="recommendScroll" enable-flex >
+
+<!--小伙伴的话-->
+<view class="Countainer" wx:if="{{list}}">
+  <view class="background" wx:for="{{list}}" bindtap="ceshi" data-item="{{list}}">
+      <image  src="/static/images/friend.png"></image>
+      <view class="photo15">
+          <image class="award10"   src="{{item[0]}}" data-index="index2[0]" ></image>
+      </view>
+      <view class="photo16">
+          <image class="award11"  bindtap="ceshi" data-item="{{item[1]}}" src="{{item[1]}}" data-index="index2[1]" ></image>
+      </view>
+      <view class="photo17">
+          <image class="award12"  bindtap="ceshi" data-item="{{item[2]}}" src="{{item[2]}}" data-index="index2[2]" ></image>
+      </view>
+  </view>
+</view>
+<view class="Countainer" wx:else>
+  <view class="background" >
+    <image  src="/static/images/friend.png"></image>
+  </view>
+  <view class="photo15">
+    <image class="award10" src="/static/images/shupepar.png"></image>
+  </view>
+  <view class="photo16">
+    <image class="award11" src="/static/images/shupepar.png"></image>
+  </view>
+  <view class="photo17">
+    <image class="award12" src="/static/images/shupepar.png"></image>
+  </view>
+</view>
+
+<text id="word1">2020学年第一学期</text>
+</scroll-view>
+
+<!--下方导出按钮-->
+<view  class="btns">
+<button  class="submitbtn" form-type="submit" >
+导出
+</button>  
+</view>
+
+</view>
+

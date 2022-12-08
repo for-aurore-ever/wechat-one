@@ -1,0 +1,20 @@
+<!--pages/HeadTeacher/excellent/excellent.wxml-->
+<wxs src="../../../utils/string.wxs" module="tools" />
+
+<view class="Container">
+  <view class="list">
+    <text>卓越少年名单 :</text>
+  </view>
+  <view class="containerbox">
+    <!-- 多选框 -->
+    <checkbox-group class="containerList" color='223, 223, 223' bindchange="choose">
+      <view class="group" wx:for="{{name}}" wx:key="id">
+        <checkbox bindtap="excellent" value="{{tools.my_slice(item,0,8)}}" data-id="{{item.id}}">{{ tools.my_slice(item,9) }}</checkbox>
+
+      </view>
+    </checkbox-group>
+  </view>
+  <view>
+    <button bindtap="toexcellent2" class='btn' style="width:75%">确定</button>
+  </view>
+</view>

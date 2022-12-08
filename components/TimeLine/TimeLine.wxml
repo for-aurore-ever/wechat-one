@@ -1,0 +1,30 @@
+<view class="box">
+  <view   class="one">
+    <view class="onedotActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+      <view class="onemaintitle">2021学年第一学期</view>
+      <view class="onemainstate">
+          制作中
+      </view>
+      <view class="onemaincon"><navigator><image></image></navigator></view>
+    </view>
+  </view>
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+      <view class="onemaintitle">2020学年第二学期</view>
+      <view class="onemaincon">
+      <navigator><image></image></navigator></view>
+    </view>
+  </view>
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+      <view class="onemaintitle">2020学年第一学期</view>
+      <view class="onemaincon"><navigator><image></image></navigator></view>
+    </view>
+  </view>
+</view>

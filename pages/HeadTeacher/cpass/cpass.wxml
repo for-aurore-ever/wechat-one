@@ -1,0 +1,26 @@
+<!--pages/HeadTeacher/cpass/cpass.wxml-->
+<view class="cpass">
+    <!-- <view class="test">
+      <text class="pass">验证密码</text>
+      <view class="Pass">
+            <input password='{{passwordType}}' maxlength="20" placeholder="请输入原密码" ></input>
+            <text bindtap="eyeStatus" class="iconfont icon-yanjing"></text>
+      </view>
+    </view> -->
+    <view class="test">
+        <text class="pass">新密码</text>
+        <view class="Pass">
+            <input model:value="{{password1}}" maxlength="20" placeholder="请输入新密码" ></input>
+            <!-- <text bindtap="eyeStatusTwo" class="iconfont icon-yanjing"></text> -->
+        </view>
+    </view>
+    <view class="test">
+        <text class="pass">确认密码</text>
+        <view class="Pass">
+            <input class="old"  model:value="{{password}}"  placeholder="请再次输入密码"></input>
+            <text></text>
+        </view>
+    </view>
+    <button class="btn" style="width:80%" bindtap="haveUpdate">确定修改</button>
+</view>
+

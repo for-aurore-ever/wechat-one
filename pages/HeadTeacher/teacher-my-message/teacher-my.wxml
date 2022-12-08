@@ -1,0 +1,69 @@
+<!--pages/teacher-my-message/teacher-my.wxml-->
+<!--pages/my-message/my-message.wxml-->
+<!--pages/teacher-my-message/teacher-my.wxml-->
+<!--pages/my-message/my-message.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view>
+  <!-- 信息的top区域 start -->
+  <view class="topMessage">
+    <!-- 头像 start -->
+    <view class="header" bindtap="hpic">
+        <text class="text">头像</text>
+        <view>
+          <!-- //实现动态的铺设 -->
+          <image src="{{getfile1==''?'../../../static/images/moren.jpg':config.host+'/getFile?name='+getfile1}}"></image>
+          <text class="text icon">></text>
+        </view>
+    <!-- 头像 end -->
+    </view>
+    <!-- 姓名 start -->
+    <view class="nameTop">
+      <text class="text">姓名</text>
+      <view>
+        <text class="name">{{teacherMessage[0]}}</text>
+      </view>
+    <!-- 姓名 end -->
+    </view>
+  <!-- 信息的top区域 end -->
+  </view>
+  <!-- 信息的center区域 start -->
+  <view class="topMessage">
+      <view class="header">
+        <text class="text">我的账号</text>
+        <view>
+          <text class="name">{{teacherMessage[1]}}</text>
+        </view>
+      </view>
+      <view class="nameTop">
+        <text class="text">修改密码</text>
+        <view>
+          <text class="icon" bindtap="goChangePassword">></text>
+        </view>
+      </view>
+  <!-- 信息的center区域 end -->  
+  </view>
+  <!-- 信息的footer区域 start -->  
+  <view class="topMessage">
+    <view class="header">
+        <text class="text">我的身份</text>
+        <view>
+          <text class="name">{{teacherMessage[3]}}</text>
+        </view>
+      </view>
+      <view class="nameTop">
+        <text class="text">我的身份2</text>
+        <view>
+          <text class="name">{{teacherMessage[4]}}</text>
+        </view>
+      </view>
+      <view class="nameTop">
+        <text class="text">我的身份3</text>
+        <view>
+          <text class="name">{{teacherMessage[5]}}</text>
+        </view>
+      </view>
+  <!-- 信息的footer区域 end -->  
+  </view>
+  <button class="btn" style="width:560rpx" bindtap='goLogot'>退出登录</button>
+</view>
+  

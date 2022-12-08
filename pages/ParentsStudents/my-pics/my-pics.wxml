@@ -1,0 +1,34 @@
+<!--pages/my-kids/my-kids.wxml-->
+<view class="myKidsContainer">
+  <view class="pics">
+      <view class="imageContainer">
+        <image src="{{tempFilePaths.path}}"></image>
+      </view>
+      <view class="nameTimeContainer">
+        <view class="nameContainer">
+          <text >张小小</text>
+          <text class="icon">···</text>
+        </view>
+        <view class="timeContainer">
+          <text>2022-06-01</text>
+        </view>
+      </view>
+  </view>
+  <view class="pics">
+      <view class="imageContainer">
+        <image></image>
+      </view>
+      <view class="nameTimeContainer">
+        <view class="nameContainer">
+          <text >张小小</text>
+          <text class="icon">···</text>
+        </view>
+        <view class="timeContainer">
+          <text>2022-06-01</text>
+        </view>
+      </view>
+  </view>
+  <view class="btnContainer">
+    <button class="confirm-btn"  bindtap="picclick">+ 上传图片</button>
+  </view>
+</view>

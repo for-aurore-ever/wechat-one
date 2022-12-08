@@ -1,0 +1,33 @@
+<view bindtap="clickme">
+  <button>分享</button>
+</view>
+<!--底部下拉弹框 -->
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <!--自定义弹窗内容 start-->
+  <!-- 两个图标和按钮包裹器 start -->
+  <view class="iconContainer">
+    <!-- 图标一 start-->
+    <view class="icons">
+        <icon  class="iconfont icon-weixin"></icon>
+        <text>分享给好友</text>
+    <!-- 图标一 end -->
+    </view>
+    <!-- 图标二 start-->
+    <view class="icons">
+        <icon class="iconfont icon-shejiaotubiao-02"></icon>
+        <text>分享朋友圈</text>
+    <!-- 图标二 end -->
+    </view>
+    <!-- 按钮包裹器 start -->
+    <view class="btnContainer" 	>
+        <button class="btn1" bindtap="noshowModalTwo">取消</button>
+    <!-- 按钮包裹器 end' -->
+    </view>
+    <!-- 两个图标和按钮包裹器 end -->
+    <!--自定义弹窗内容 end-->
+  </view>
+</view>
+

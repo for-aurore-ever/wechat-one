@@ -1,0 +1,39 @@
+<!--pages/HeadTeacher/report2/report2.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Continer">
+
+<!--上半区导航页面-->
+<view class="gander">
+  <view class="gender">
+    <text class="semester">2021第二学期</text>
+  </view>
+  <view class="changes">
+    <text class="iconfont icon-qiehuan" style="color:#7c0000"></text>
+    <text class="change">形式切换</text>
+  </view>
+</view>
+<!--下半区展示区域页面-->
+<scroll-view class="recommendScroll" enable-flex >
+  <view class="scrollItem">
+    <image src="{{config.host}}/profile/static/images/personal/bglmg.jpg"></image>
+  </view>
+  <view class="scrollItem">
+    <image src="{{config.host}}/profile/static/images/personal/bglmg.jpg"></image>
+  </view>
+  <view class="scrollItem">
+    <image src="{{config.host}}/profile/static/images/personal/bglmg.jpg"></image>
+  </view>
+  <view class="scrollItem">
+    <image src="{{config.host}}/profile/static/images/personal/bglmg.jpg"></image>
+  </view>
+  <view class="scrollItem">
+    <image src="/static/images/personal/bglmg.jpg"></image>
+  </view>
+  <view class="scrollItem">
+    <image src="{{config.host}}/profile/static/images/personal/bglmg.jpg"></image>
+  </view>
+</scroll-view>
+
+
+</view>
+

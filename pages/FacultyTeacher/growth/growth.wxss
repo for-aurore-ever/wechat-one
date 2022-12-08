@@ -1,0 +1,24 @@
+/* pages/growth/growth.wxss */
+page{
+  background-color: #f7f8fa;
+}
+
+.header{
+/* 给父盒子添加flex布局,来使得子元素居中*/
+  display: flex;
+  /* 主轴居中 */
+  justify-content: center;
+  /* 侧轴居中 */
+  align-items: center;
+  /* 让父盒子水平居中 */
+  margin: 0 auto;
+  background-color:#ffffff;
+  height: 400rpx;
+  border-top:5rpx solid #f7f8fa;
+}
+
+.img{
+  width: 388rpx;
+  height: 154rpx;
+  border-radius:6rpx;
+}

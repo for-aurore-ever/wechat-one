@@ -1,0 +1,29 @@
+<!--pages/my-message/my-message.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="messageComtainer">
+<view class="topMessage">
+  <view class="header" bindtap="hpic">
+      <text class="text">头像</text>
+      <view>
+        <image class="img" src="{{myMessageSrc==''?'../../../static/images/moren.jpg':config.host+'/getFile?name='+myMessageSrc}}"></image>
+        <text class="text icon">></text>
+      </view>
+    </view>
+    <view class="nameTop">
+      <text class="text">姓名</text>
+      <view>
+        <text class="name">{{myMeaasge[0]}}</text>
+        <!-- <text class="text icon">></text> -->
+      </view>
+    </view>
+</view>
+<view class="topMessage">
+  <view class="header">
+      <text class="text">手机号</text>
+      <view>
+        <text class="number">{{myMeaasge[1]}}</text>
+      </view>
+    </view>
+</view>
+<button class="btn" style="width:560rpx" bindtap='goLogot'>退出登录</button>
+</view>

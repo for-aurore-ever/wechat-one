@@ -1,0 +1,785 @@
+/* pages/make1/make1.wxss */
+.Continer{
+  margin-top: 5rpx;
+}
+/*学期文本*/
+.Continer .semester{
+  display: flex;
+  height:50rpx;
+  font-size:30rpx;
+  justify-content:space-between; /*使页面的>符移到右边*/
+  padding: 20rpx 20rpx;
+  background-color: #fff;
+  margin: 10rpx 10rpx;
+  line-height: 50rpx;
+  margin-left: 0rpx;
+  margin-top: 0rpx;
+  border-bottom:8rpx solid #7c0000;
+  border-bottom-width: 6rpx;
+}
+.photo3 .img1{
+  display: inline;
+  width: 100rpx ;
+  height: 100rpx ;
+  /* background-color: antiquewhite; */
+  position: absolute;
+  bottom: -80rpx;
+  left: 230rpx;
+}
+.photo4 .img22{
+  display: inline;
+  width: 100rpx;
+  height: 100rpx;
+  /* background-color: antiquewhite; */
+  position: absolute;
+  bottom: -80rpx;
+  left: 230rpx;
+}
+/*切换模式*/
+.Continer .change{
+  color: #7c0000;
+  /* margin-bottom:20rpx;  */
+  /*padding-bottom: 10rpx;*/
+  font-size:24rpx;
+  line-height: 50rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  margin: 10rpx;
+}
+/*头部盒子*/
+.Continer .gander{
+  display: flex;
+  height:50rpx;
+  font-size:28rpx;
+  justify-content:space-between; /*使页面的>符移到右边*/
+  padding: 0rpx 20rpx;
+  background-color: #fff;
+  margin: 0rpx 0rpx;
+  line-height: 50rpx;
+}
+.Continer .gander{
+  height: 96rpx;
+  margin-right: 30rpx;
+  justify-content:space-between;
+}
+.Continer .changes{
+  margin-top: 20rpx;
+}
+
+.Countainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.background{
+  /* 给父元素开启绝对定位居中 */
+   position: relative;
+}
+
+/*只有一个上传照片的页面*/
+.photo{
+  position: absolute;
+  z-index: 2;
+  height: 552rpx;
+  width: 410rpx;
+  background-color: rgba(247, 248, 250, 1);
+   border: 1px solid rgba(124, 0, 0, 1);
+   border-style: dashed;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 116rpx;
+}
+.background image{
+  display: flex;
+  height: 820rpx;
+  padding: 10rpx 84rpx;
+  width: 580rpx;
+}
+
+/*点击上传图片按钮  */
+
+/* 删除图片按钮 */
+.icon-cuowu{
+  position:absolute;
+  top:0;right:0;
+  display: flex;
+  width: 50rpx;
+ height: 50rpx;
+ align-items: center;
+ justify-content: center;
+ font-size: 40rpx;
+ color: rgba(255, 255, 255, 1);
+ background-color:darkgray;
+}
+.add{
+  font-size: 50rpx;
+  color: rgba(124, 0, 0, 1);
+  text-align: center;
+}
+.addphoto{
+   color: rgba(124, 0, 0, 1);
+   text-align: center;
+}
+
+
+
+
+/*有两个上传图片的页面*/
+/* 上传图片1 */
+.photo1 {
+  position: absolute;
+  z-index: 2;
+  height: 226rpx;
+  width: 414rpx;
+  background-color: rgba(247, 248, 250, 1);
+   border: 1px solid rgba(124, 0, 0, 1);
+   border-style: dashed;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 116rpx;
+}
+.photo1 .img image{
+   /* height: 230rpx!important;
+   width: 418rpx!important; */
+}
+.photo2 .img image{
+  /* height: 230rpx!important;
+  width: 418rpx!important; */
+}
+/* 上传图片2 */
+.photo2 {
+  position: absolute;
+  z-index: 2;
+  height: 226rpx;
+  width: 414rpx;
+  background-color: rgba(247, 248, 250, 1);
+   border: 1px solid rgba(124, 0, 0, 1);
+   border-style: dashed;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 444rpx;
+}
+/* 上传的图片 */
+.img image{
+  /* height: 230rpx !important;
+  width: 418rpx !important; */
+}
+.img{
+   height: 550rpx !important;
+   width: 418rpx !important;
+   margin-right: 170rpx;
+   margin-bottom: 20rpx;
+   position: relative;
+   z-index: 1;
+}
+.img2{
+  height: 230rpx!important;
+   width: 418rpx!important;
+   /* height: 550rpx !important;
+   width: 418rpx !important; */
+  top: 160rpx;
+  right: -256rpx;
+   position: absolute;
+   z-index: 1;
+   margin-bottom: 50rpx;
+}
+.img3{
+  /* height: 230rpx!important;
+   width: 418rpx!important; */
+   height: 550rpx !important;
+   width: 418rpx !important;
+  top: 0rpx;
+  right: -256rpx;
+   position: absolute;
+   z-index: 1;
+   margin-bottom: 50rpx;
+}
+.img4{
+  /* height: 230rpx!important;
+   width: 418rpx!important; */
+   height: 550rpx !important;
+   width: 418rpx !important;
+  top: 0rpx;
+  right: -256rpx;
+   position: absolute;
+   z-index: 1;
+   margin-bottom: 50rpx;
+}
+.img5{
+  /* height: 230rpx!important;
+   width: 418rpx!important; */
+   height: 550rpx !important;
+   width: 418rpx !important;
+  top: 0rpx;
+  right: -256rpx;
+   position: absolute;
+   z-index: 1;
+   margin-bottom: 50rpx;
+}
+.img6{
+  margin-top: 190rpx;
+}
+.img7{
+  margin-top: 190rpx;
+}
+.img8{
+  margin-top: 190rpx;
+}
+.yingzhang1{
+
+}
+.title{
+  height: 200rpx;
+  line-height: 100rpx;
+  width: 250rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.add{
+  font-size: 50rpx;
+  color: rgba(124, 0, 0, 1);
+  text-align: center;
+  
+}
+.addphoto{
+   color: rgba(124, 0, 0, 1);
+   text-align: center;
+}
+
+.background{
+  /* 给父元素开启绝对定位居中 */
+   position: relative;
+}
+
+
+
+
+
+
+
+/*老师寄语*/
+.background{
+  /* 给父元素开启绝对定位居中 */
+   position: relative;
+}
+.photo3 {
+  word-wrap:break-word;word-break:break-all;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  height: 226rpx;
+  width: 414rpx;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160rpx;
+  font-size: 23rpx;
+}
+/* 上传图片2 */
+.photo4 {
+  word-wrap:break-word;word-break:break-all;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  height: 222rpx;
+  width: 414rpx;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500rpx;
+  font-size: 23rpx;
+}
+/*老师寄语里文本框*/
+textarea{
+  width:414rpx;
+  height: 230rpx;
+  font-size: 24rpx;
+}
+
+
+
+/*小伙伴的话*/
+.photo20{
+  position: absolute;
+  z-index: 2;
+  height: 170rpx;
+  width: 418rpx;
+  background-color: rgba(247, 248, 250, 1);
+   border: 2rpx solid rgba(124, 0, 0, 1);
+   border-style: dashed;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 114rpx;
+}
+.photo20 .img{
+  width: 418rpx;
+  height: 170rpx;
+}
+
+
+
+
+
+
+/*成绩报告单*/ 
+/*成绩报告表*/
+.photo5{
+  position: absolute;
+  z-index: 2;
+  height: 704rpx;
+  width: 516rpx;
+  left:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*成绩报告表的照片*/
+.award1{
+position: absolute;
+height: 704rpx;
+width: 516rpx;
+z-index: 2;
+left: 0;
+top: 0;
+right: 0;
+margin: auto;
+margin-top:78rpx;
+}
+/*第一列文字盒子*/
+.nameclass{
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  margin-top: 180rpx;
+  top: 0;
+  left: -30rpx;
+  /* margin-right:rpx ; */
+}
+/*第一列文字*/
+.nameclass text{
+  margin-left: 100rpx;
+  font-size: 23rpx;
+}
+/*第二列文字盒子*/
+.heightweight{
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  margin-top: 210rpx;
+  top: 0;
+  margin-left: 30rpx;
+  justify-content: space-between;
+}
+/*体重*/
+.weight{
+  margin-left:160rpx;
+  font-size: 23rpx;
+}
+/*身高*/
+.height{
+  font-size: 23rpx;
+  margin-left: 10rpx;
+}
+/*视力*/
+.eye{
+  display: flex;
+  margin-left: 150rpx;
+  flex-wrap: wrap;
+  height: 50rpx;
+  width: 50rpx;
+  font-size: 23rpx;
+}
+.eye text{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 成绩报告一表格里的考试成绩盒子*/
+.score{
+  display: flex;
+  z-index: 3;
+  padding: 150rpx;
+  position: absolute;
+  top: 0;
+  margin-top: 155rpx;
+  margin-left: 40rpx;
+}
+.score text{
+  margin-left: 60rpx;
+  font-size: 23rpx;
+}
+/* 成绩报告一评价的文字盒子 */
+.sum{
+display: flex;
+z-index: 3;
+padding: 150rpx;
+position: absolute;
+top: 0;
+margin-top: 178rpx;
+margin-left: 140rpx;
+height: 25rpx;
+width: 490rpx;
+}
+.sum text{
+   margin-left: 50rpx;
+   font-size: 23rpx;
+}
+/*学科成绩盒子*/
+.subject{
+  position: absolute;
+  top: 0;
+  padding: 200rpx;
+  z-index: 3;
+  margin-top: 250rpx;
+}
+.subject1{
+  display: flex;
+    justify-content: space-between;
+    width: 310rpx;
+    margin-left: 100rpx;
+}
+.subject1 text{
+  font-size: 23rpx;
+}
+/* 校园表现报告文字盒子 */
+.schoolshow{
+  position: absolute;
+  top: 0;
+  padding: 200rpx;
+  z-index: 3;
+  margin-top: 420rpx;
+  margin-left: 30rpx;
+  widows: 400px;
+}
+
+
+
+/*有三个上传图片的页面的话*/
+/* 上传图片1 */
+.photo10 {
+  position: absolute;
+  z-index: 2;
+  height: 170rpx;
+  width: 418rpx;
+  background-color: rgba(247, 248, 250, 1);
+   border: 2rpx solid rgba(124, 0, 0, 1);
+   border-style: dashed;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 114rpx;
+}
+/* 上传图片2 */
+.photo11 {
+  position: absolute;
+  z-index: 2;
+  height: 170rpx;
+  width: 418rpx;
+  background-color: rgba(247, 248, 250, 1);
+   border: 2rpx solid rgba(124, 0, 0, 1);
+   border-style: dashed;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 308rpx;
+}
+/* 上传图片3 */
+.photo12 {
+  position: absolute;
+  z-index: 2;
+  height: 170rpx;
+  width: 418rpx;
+  background-color: rgba(247, 248, 250, 1);
+   border: 2rpx solid rgba(124, 0, 0, 1);
+   border-style: dashed;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 502rpx;
+}
+
+.photo10 .img image{
+  height: 174rpx!important;
+  width: 420rpx!important;
+}
+.photo11 .img image{
+  height: 174rpx!important;
+  width: 420rpx!important;
+}
+.photo12 .img image{
+  height: 174rpx!important;
+  width: 420rpx!important;
+}
+/* 删除图片按钮 */
+.icon-cuowuguanbiquxiao{
+  position:absolute;
+  top:0;right:0;
+  display: flex;
+  width: 50rpx;
+ height: 50rpx;
+ align-items: center;
+ justify-content: center;
+ font-size: 40rpx;
+ color: rgba(255, 255, 255, 1);
+ background-color:darkgray;
+}
+.img image{
+  /* height: 556rpx !important;
+  width: 420rpx !important; */
+}
+.title{
+  height: 180rpx;
+  line-height: 100rpx;
+  width: 250rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.add{
+  font-size: rpx;
+  color: rgba(124, 0, 0, 1);
+  text-align: center;
+  
+}
+.addphoto{
+   color: rgba(124, 0, 0, 1);
+   text-align: center;
+}
+
+
+  #friend1{
+  position: absolute;
+  z-index: 4;
+  height: 80rpx;
+  width: 360rpx;
+  left: 0;right: 0;
+  margin: auto;
+  margin-top: 148rpx;
+  margin-left: 200rpx;
+  font-size: 24rpx;
+  }
+  #friend2{
+    position: absolute;
+    z-index: 3;
+    height: 80rpx;
+    width: 360rpx;
+    left:0;right:0;
+    margin:auto;/*有了这个就自动居中了*/
+    margin-left: 200rpx;
+    margin-top: 340rpx;
+    font-size: 24rpx;
+  }
+  #friend3{
+    position: absolute;
+ z-index: 3;
+ height: 80rpx;
+ width: 360rpx;
+ left:0;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top:536rpx;
+ margin-left: 200rpx;
+ font-size: 24rpx;
+  }
+  .name1{
+    position: absolute;
+ z-index: 3;
+ left:0;
+ margin-top: 215rpx;
+ margin-left: 520rpx;
+ font-size: 24rpx;
+  }
+  .name2{
+    position: absolute;
+ z-index: 3;
+ left:0;
+ margin-top: 410rpx;
+ margin-left: 520rpx;
+ font-size: 24rpx;
+  }
+  .name3{
+    position: absolute;
+ z-index: 3;
+ left:0;
+ margin-top: 605rpx;
+ margin-left: 520rpx;
+ font-size: 24rpx;
+  }
+
+
+/*我的荣誉*/
+.award10{
+  position: absolute;
+  height: 172rpx;
+  width: 426rpx;
+  z-index: 3;
+ left:0;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top: 114rpx;
+}
+.award11{
+  position: absolute;
+  height: 172rpx;
+  width: 426rpx;
+  z-index: 3;
+ left:0;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top: 308rpx;
+}
+.award12{
+  position: absolute;
+  height: 172rpx;
+  width: 426rpx;
+  z-index: 3;
+ left:0;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top: 502rpx;
+}
+.word1{
+  background-color: #fff;
+position: absolute;
+z-index: 3;
+height: 110rpx;
+width: 250rpx;
+left:-15rpx;right:0;
+margin: auto;
+margin-top: 170rpx;
+margin-left: 330rpx;
+font-size: 32rpx;
+}
+.word2{
+  background-color: #fff;
+ position: absolute;
+ z-index: 3;
+ height: 110rpx;
+ width: 250rpx;
+ left:-15rpx;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-left: 330rpx;
+ margin-top: 364rpx;
+ font-size: 32rpx;
+}
+.word3{
+  background-color: #fff;
+ position: absolute;
+ z-index: 3;
+ height: 110rpx;
+ width: 250rpx;
+ left:-15rpx;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top:560rpx;
+ margin-left: 330rpx;
+ font-size: 32rpx;
+}
+.day1{
+ position: absolute;
+ z-index: 3;
+ left:0;
+ margin-top: 220rpx;
+ margin-left: 470rpx;
+ font-size: 16rpx;
+}
+.day2{
+ position: absolute;
+ z-index: 3;
+ left:0;
+ margin-top: 415rpx;
+ margin-left: 470rpx;
+ font-size: 16rpx;
+}
+.day3{
+ position: absolute;
+ z-index: 3;
+ left:0;
+ margin-top: 610rpx;
+ margin-left: 470rpx;
+ font-size: 16rpx;
+}
+.yingzhang{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: -150rpx;
+  width: 200rpx!important;
+  height: 100rpx!important;
+  /* margin-bottom: 200rpx!important; */
+}
+.yingzhang1{
+  position: absolute;
+  z-index: 2;
+  bottom: 150rpx;
+  right: -250rpx;
+  width: 200rpx!important;
+  height: 100rpx!important;
+  /* margin-bottom: 200rpx!important; */
+}
+.yingzhang2{
+  position: absolute;
+  z-index: 2;
+  bottom: 150rpx;
+  right: -250rpx;
+  width: 200rpx!important;
+  height: 100rpx!important;
+  /* margin-bottom: 200rpx!important; */
+}
+.yingzhang4{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: -250rpx;
+  width: 200rpx!important;
+  height: 100rpx!important;
+  /* margin-bottom: 200rpx!important; */
+}
+.yingzhang5{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: -250rpx;
+  width: 200rpx!important;
+  height: 100rpx!important;
+  /* margin-bottom: 200rpx!important; */
+}
+.yingzhang6{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: -250rpx;
+  width: 200rpx!important;
+  height: 100rpx!important;
+  /* margin-bottom: 200rpx!important; */
+}
+.yingzhang7{
+  position: absolute;
+  z-index: 2;
+  bottom: -80rpx;
+  right: 150rpx;
+  width: 200rpx!important;
+  height: 100rpx!important;
+  /* margin-bottom: 200rpx!important; */
+}

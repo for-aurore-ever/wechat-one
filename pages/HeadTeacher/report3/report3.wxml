@@ -1,0 +1,24 @@
+<!--pages/HeadTeacher/report3/report3.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Continer">
+
+<!--上半区导航页面-->
+<view class="gander">
+  <view class="gender">
+    <text class="semester">2021第二学期</text>
+  </view>
+  <view class="changes">
+    <text class="iconfont icon-qiehuan" style="color:#7c0000"></text>
+    <text class="change">形式切换</text>
+  </view>
+</view>
+<!--下半区展示区域页面-->
+<scroll-view class="recommendScroll" enable-flex >
+  <view class="scrollItem">
+    <image class="item_0" src="{{config.host}}/profile/static/images/personal/bglmg.jpg" catchtouchstart='touchStart' catchtouchend="touchEnd" ></image>
+  <image class="item_1" src="{{config.host}}/profile/static/images/nanhai1.png" catchtap="ccccc"></image>
+  </view>
+</scroll-view>
+</view>
+
+

@@ -1,0 +1,130 @@
+page {
+  height: 99vh;
+  width: 100%;
+  background-color: rgb(247, 248, 250);
+}
+.banji11{
+  /* display: flex; */
+  margin-left: 15rpx;
+  border-bottom:4rpx solid #7c0000;
+}
+.banji22{
+  /* display: flex; */
+  margin-left: 15rpx;
+  /* border-bottom:4rpx solid #7c0000; */
+}
+.banji2{
+  margin-top: 0rpx;
+  display: flex;
+  justify-content: start;
+}
+/* 环图部分 */
+.ring {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400rpx;
+  margin-top: 4rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+ /* 文本内容 */
+ .text {
+  margin-top: 20rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.text .symbol {
+  font-size: 35rpx;
+  font-weight: bold;
+  margin: 11rpx 18rpx 0 20rpx;
+  color: rgb(135, 22, 22);
+}
+
+.text .right {
+  float: right;
+  margin-right: 32rpx;
+  font-size: 28rpx;
+  color: rgb(135, 22, 22);
+}
+
+/* 环图 */
+.ringCharts {
+  width: 360rpx;
+  height: 336rpx;
+  display: flex;
+}
+
+.ring .Information {
+  display: flex;
+  flex-direction: row            ;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx;
+} 
+
+
+/* 状态栏 */
+.stateCharts {
+  display: flex;
+  margin: 40rpx 30rpx 0 10rpx;
+  flex-direction: column;
+}
+.stateCharts .state {
+  font-weight:700;
+  color: "#101010";
+  font-size: 12px;
+  margin-bottom: 4rpx;
+}
+.stateCharts .name {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16rpx;
+  color: "#666666";
+  font-size: 14px;
+}
+
+.stateCharts .name .round {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  margin: 10rpx 8rpx 0 0;
+}
+
+
+
+/* 柱状图 */
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.column .oneCharts {
+  width: 100%;
+  height: 400rpx;
+  margin-top: 40rpx;
+}
+
+.column .twoCharts {
+  width: 100%;
+  height: 350rpx;
+  margin-top: 40rpx;
+}
+
+.lucky-index-round{
+  position: fixed;
+  top: 9999rpx;
+  left: 0;
+  width: 188rpx;
+  height: 188rpx;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 400rpx;
+}

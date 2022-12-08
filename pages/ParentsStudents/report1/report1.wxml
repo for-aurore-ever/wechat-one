@@ -1,0 +1,68 @@
+<!--pages/report1/report1.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<import src="../../tabbar/tabbar" />
+<template is="tabBar" data="{{tabBar}}" />
+<view class="continer">
+  <view class="Continer">
+    <view class="header">
+      <view class="nameContainer" wx:for="{{childMessage}}" data-item="{{item}}" data-index="{{index}}" bindtap="cChildMessage">
+        <text class="name{{currentIndex==index?1:2}}">{{item.stuName}}</text>
+        <!-- <text class="name2">{{item.stuName}}</text> -->
+      </view>
+    </view>
+
+  <view class="changes">
+    <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7C0000"></text>
+    <text class="change" bindtap="goReport2">模式切换</text>
+  </view>
+  </view>
+  <!--中下方成长报告展示-->
+    <view class="box">
+    <view class="one" wx:for="{{growMessageOne}}">
+    <view class="onedotActive"></view>
+    <view class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+    <view class="onemaintitle">{{item.semesterName}}</view>
+    <view class="onemainstate">
+        制作中
+    </view>
+    </view>
+    <view class="onemaincon">
+    <navigator>
+    <view class="photo" bindtap="goMade1" data-growMessageThis="{{item}}">
+    <image src="{{config.host}}/profile/static/images/growreport.png"></image>
+    <view class="message">
+        <text class="message1">{{item.stuName}}</text>
+        <text class="message2">{{item.gradeId}}</text>
+    </view>
+    </view>
+    </navigator>
+    </view>
+    </view>
+  </view>
+    <view class="one" wx:for="{{growMessageLast}}">
+    <view class="onedotNoActive"></view>
+    <view class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+    <view class="onemaintitle">{{item.semesterName}}</view>
+    <view class="onemainstate">
+        已定稿
+    </view>
+    </view>
+    <view class="onemaincon">
+    <navigator>
+    <view class="photo" bindtap="goDefine1" data-growMessageThis="{{item}}">
+    <image src="{{config.host}}/profile/static/images/growreport.png"></image>
+    <view class="message">
+        <text class="message1">{{item.stuName}}</text>
+        <text class="message2">{{item.gradeId}}</text>
+    </view>
+    </view>
+    </navigator>
+    </view>
+    </view>
+  </view>
+</view>
+</view>

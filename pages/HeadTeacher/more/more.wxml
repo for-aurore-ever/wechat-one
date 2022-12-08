@@ -1,0 +1,85 @@
+<view class="Countainer">
+<!-- 运动会 -->
+  <view class="run"wx:for="{{list}}" data-item="index" data-item="{{item}}">
+  <view class="sport" bindtap="getGradeId" data-item="{{item}}"  >
+  <view class="contentname">
+  <text>{{item.galleryName}}</text>
+  </view>
+  </view>
+  <view class="more" data-item="{{item}}"  bindtap="clickme">
+  <text class="iconfont icon-gengduo" > </text>
+  </view>
+  </view>
+<!-- 按钮 -->
+  <view>
+    <button class='btn' style="width:75%" bindtap="submit">+ 创建主题</button>
+  </view>
+</view>
+<!-- 底部弹框 -->
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<!--自定义弹窗内容-->
+<view class="runstyle">
+  <view class="title">
+  <text>运动会</text>
+  </view>
+</view>
+<view class="edit">
+<view class="delect" bindtap="submit1">
+  <text class="iconfont icon-delete"></text>
+  <text >删除</text>
+</view>
+<view class="rename" bindtap="submit2">
+<text class="iconfont icon-zhongmingming"></text>
+<text>重命名</text>
+</view>
+</view>
+<view class="cancel">
+<text>取消</text>
+</view>
+</view>
+<!--删除-弹框 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal3}}"></view>
+<view class="modalDlg" wx:if="{{showModal3}}">
+  <view class="theme1">
+  <text>确认删除</text>
+  </view>
+  <view class="theme2">
+  <text>确认删除所选图库吗？</text>
+  </view>
+  <view class="confirm">
+  <button class="yes" bindtap="deletePic" >确定</button>
+  <button class="no" bindtap="go">取消</button>
+  </view>
+</view>
+<!--重命名-弹框 -->
+<view class="mask" catchtouchmove="preventTouchMove2" wx:if="{{showModal2}}"></view>
+<view class="modalDlg" wx:if="{{showModal2}}">
+  <view class="theme1">
+  <text>重命名</text>
+  </view>
+  <view class="theme3">
+  <input model:value="{{galleryName}}"   type="text" placeholder="请输入您的新名字"/>
+  <text class="iconfont icon-icon-cross-empty"></text>
+  </view>
+  <view class="confirm">
+  <button class="yes" bindtap="chong" >确定</button>
+  <button class="no" bindtap="go2">取消</button>
+  </view>
+</view>
+<!-- 创建主题弹框 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal4}}"></view>
+<view class="modalDlg" wx:if="{{showModal4}}">
+  <view class="theme">
+  <text>主题名称</text>
+  </view>
+  <input  class="create" model:value="{{galleryName}}" type="text"  placeholder="请输入主题名称"  placeholder-class="place" ></input>
+  <view class="confirm">
+  <button class="yes" bindtap="tophotos">确定</button>
+  <button class="no" bindtap="go3">取消</button>
+  </view>
+</view>
+
+

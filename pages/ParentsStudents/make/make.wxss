@@ -1,0 +1,110 @@
+/* pages/make/make.wxss */
+page{
+  background-color: rgba(247, 248, 250, 1);
+}
+.Countainer{
+   background-color: rgba(255, 255, 255, 1);
+}
+.Countainer .header{
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  margin-left: 30rpx;
+  margin-top: 5rpx;
+  align-items: center;
+  
+}
+.nameContainer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.name1{
+  margin-left:40rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  font-size:32rpx;
+  border-bottom: 8rpx solid #7C0000;
+}
+/*张小小*/
+.name2{
+  margin-left: 48rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  font-size:32rpx;
+}
+.contentCountainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* 项目在横轴的开始处对齐，即项目将在顶部垂直对齐。
+  子元素未设置高度，设置此属性，根据子元素弹性盒子中的元素进行高度自适应 */
+  align-items: flex-start;
+  margin-bottom: 100rpx;
+}
+.contentCountainer .content{
+   width: 20%;
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: 80rpx;
+   margin-top: 40rpx;
+   box-shadow: 0rpx 0rpx 4rpx 0rpx rgba(153, 153, 153, 40);
+   border-radius: 8rpx;
+   text-align:center;
+}
+image{
+  height: 80rpx;
+  width: 80rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.eng{
+  font-size: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgba(153, 153, 153, 1);
+  margin: 0 auto;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
+.title{
+  font-size: 20rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.photo1{
+  height: 100rpx;
+  width: 130rpx;
+  margin-top: 20rpx;
+}
+.rootCountainer{
+  height: 200rpx;
+  display: flex;
+  /*  元素位于容器的基线上。 */
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 40rpx;
+  border: 2rpx solid rgba(247, 248, 250, 1);
+}
+.root1{
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70rpx;
+  margin-right: 70rpx;
+
+  }
+.root1 text{
+  font-size: 36rpx;
+}
+ .img1{
+   height: 85rpx;
+   width: 85rpx;
+ }
+ .img2{
+   height: 120rpx;
+   width: 130rpx;
+ }

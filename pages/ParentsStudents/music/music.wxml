@@ -1,0 +1,45 @@
+<!--pages/music/music.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="music"> 
+<view class="header">
+<button class="btn1" style="width:140rpx">推荐音乐</button>
+<button class="btn2" style="width:140rpx">本地音乐</button>
+</view>
+<view class="music1">
+<image class="img" src="{{config.host}}/profile/static/images/tx.jpeg"></image>
+<view class="message">
+<text class="message1">阳光甚好，微风不燥</text>
+<text class="message2">何石</text>
+<text class="message3">03:08</text>
+</view>
+<button class="btn" style="width:132rpx">使用</button>
+</view>
+<view class="music1">
+<image class="img" src="{{config.host}}/profile/static/images/tx.jpeg"></image>
+<view class="message">
+<text class="message1">送给未来的你</text>
+<text class="message2">迪加</text>
+<text class="message3">03:08</text>
+</view>
+<button class="btn" style="width:132rpx">使用</button>
+</view>
+<view class="music1">
+<image class="img" src="{{config.host}}/profile/static/images/tx.jpeg"></image>
+<view class="message">
+<text class="message1">有何不可</text>
+<text class="message2">许嵩</text>
+<text class="message3">03:08</text>
+</view>
+<button class="btn" style="width:132rpx">使用</button>
+</view>
+
+<view class="music1">
+<image class="img" src="{{config.host}}/profile/static/images/tx.jpeg"></image>
+<view class="message">
+<text class="message1">祝你天天快乐</text>
+<text class="message2">何石</text>
+<text class="message3">03:08</text>
+</view>
+<button class="btn" style="width:132rpx">使用</button>
+</view>
+</view>

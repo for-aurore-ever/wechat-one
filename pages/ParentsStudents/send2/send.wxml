@@ -1,0 +1,54 @@
+<!--pages/send/send.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Continer">
+<!--上半区导航页面-->
+    <view class="gander">
+        <view class="gender">
+            <text class="semester">老师寄语</text>
+        </view>
+        <view class="changes">
+            <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+            <text class="change">形式切换</text>
+        </view>
+    </view>
+    <scroll-view class="recommendScroll" enable-flex >
+        <view>
+            <view class="Countainer" wx:if="{{sendList.length==0}}">
+              <view class="background">
+                  <image class="img1" src="{{config.host}}/profile/static/images/word.png"></image>
+                  <view class="photo3">
+                      <text rows="50" cols="3" class="text11"></text>
+                  </view>
+                  <view class="photo4"  >
+                      <text rows="50" cols="3" class="text11"></text>
+                  </view>
+              </view>
+            </view>
+            <view wx:else>
+              <view class="Countainer" wx:for="{{sendList}}">
+                <view class="background">
+                    <image class="img1"  src="{{config.host}}/profile/static/images/word.png"></image>
+                    <view class="photo3">
+                        <text rows="50" cols="3" class="text11"></text>
+                    </view>
+                    <view>
+                      <image class="img1111" src="{{config.host}}/profile/static/images/word.png"></image>
+                    </view>
+                    <view class="photo4"  >
+                        <text rows="50" cols="3" class="text11"></text>
+                    </view>
+                    <view>
+                      <image class="img2222" src="{{config.host}}/profile/static/images/word.png"></image>
+                    </view>
+                </view>
+              </view>
+            </view>
+        </view>
+    </scroll-view>
+<!--下方导出按钮-->
+    <view  class="btns">
+        <button  class="submitbtn" form-type="submit" >导出</button>  
+    </view>
+</view>
+
+

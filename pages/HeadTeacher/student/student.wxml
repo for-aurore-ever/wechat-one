@@ -1,0 +1,66 @@
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="continer">
+  <view class="personal">
+    <view class="personalx">
+      <image class="img" src="{{avatar==''?'../../../static/images/moren.jpg':config.host+'/getFile?name='+avatar}}"></image>
+    </view>
+  <view>
+    <text class="name">{{stuName}}</text>
+    <image class="gender" src="{{sex==0?config.host+'/profile/static/images/nanhai1.png':'../../../static/images/nvsheng.png'}}"></image>
+  </view>
+  <text class="symbol" bindtap="goBasicInformation">></text>
+  </view>
+  <!--中上方方形式切换部分-->
+  <view class="Continer">
+    <view class="changes" >
+      <text class="iconfont icon-qiehuan" style="color:#7c0000"></text>
+      <text class="change" bindtap="goreport2">模式切换</text>
+    </view>
+  </view>
+  <!--中下方成长报告展示-->
+  <view class="box">
+    <view class="one">
+    <view class="onedotActive"></view>
+    <view class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+    <view class="onemaintitle">{{growMessageOne.semesterName}}</view>
+    <view class="onemainstate">
+        制作中
+    </view>
+    </view>
+    <view class="onemaincon">
+    <navigator>
+    <view class="photo" bindtap="goMade1" data-growMessageThis="{{growMessageOne}}">
+    <image src="{{config.host}}/profile/static/images/growreport.png"></image>
+    <view class="message">
+        <text class="message1">{{growMessageOne.stuName}}</text>
+        <text class="message2">{{growMessageOne.gradeId}}</text>
+    </view>
+    </view>
+    </navigator>
+    </view>
+    </view>
+  </view>
+    <view class="one" wx:for="{{growMessageLast}}">
+    <view class="onedotNoActive"></view>
+    <view class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+    <view class="onemaintitle">{{item.semesterName}}</view>
+    </view>
+    <view class="onemaincon">
+    <navigator>
+    <view class="photo" bindtap="goDefine1" data-growMessageThis="{{item}}">
+    <image src="{{config.host}}/profile/static/images/growreport.png"></image>
+    <view class="message">
+        <text class="message1">{{item.stuName}}</text>
+        <text class="message2">{{item.gradeId}}</text>
+    </view>
+    </view>
+    </navigator>
+    </view>
+    </view>
+  </view>
+</view>
+</view>

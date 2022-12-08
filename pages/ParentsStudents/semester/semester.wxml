@@ -1,0 +1,50 @@
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Countainer">
+<view class="btn1Con">
+  <button class="btn1" bindtap="goMeeting1">选择图片1</button>
+  <button class="btn2" bindtap="goMeeting2">选择图片2</button>
+  <button class="btn3" bindtap="goMeeting3">选择图片3</button>
+</view>
+
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/39.png"></image>
+<view class="photo1"  >
+  <view  class="img" wx:if="{{imgs1 !=''}}">
+    <image wx:for="{{imgs1}}" wx:for-item="item1"  src="{{item1}}" data-index="index1" ></image>
+    <text class="iconfont icon-cuowuguanbiquxiao"  catchtap="deleteImg1"></text>
+</view>
+<view  class="title" wx:else bindtap="chooseImg1" data-remark="1">
+<text class="add">+</text>
+<text class="addphoto">点击上传图片</text>
+</view>
+</view>
+<view class="photo2"  >
+  <view  class="img" wx:if="{{imgs2 !=''}}">
+    <image wx:for="{{imgs2}}" wx:for-item="item2" src="{{item2}}" data-index="index2"></image>
+    <text class="iconfont icon-cuowuguanbiquxiao"  catchtap="deleteImg2"></text>
+</view>
+<view class="title" wx:else bindtap="chooseImg2" data-remark="2">
+<text class="add">+</text>
+<text class="addphoto">点击上传图片</text>
+</view>
+</view>
+<view class="photo3"  >
+  <view  class="img" wx:if="{{imgs3 !=''}}">
+    <image wx:for="{{imgs3}}" wx:for-item="item3" src="{{item3}}" data-index="index3"></image>
+    <text class="iconfont icon-cuowuguanbiquxiao"  catchtap="deleteImg3"></text>
+</view>
+<view class="title" wx:else bindtap="chooseImg3" data-remark="3">
+<text class="add">+</text>
+<text class="addphoto">点击上传图片</text>
+</view>
+</view>
+</view>
+<!-- 按钮盒子 start -->
+  <view class="btnContainer">
+    <!--按钮1 start  -->
+    <button class="confirm-btn1" bindtap="goNext">下一模块</button>
+    <!-- 按钮2 start -->
+    <button class="confirm-btn2" bindtap="goStart">保存</button>
+  <!-- 按钮盒子 end -->
+  </view>
+</view>

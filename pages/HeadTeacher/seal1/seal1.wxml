@@ -1,0 +1,12 @@
+<!--pages/FacultyTeacher/seal1/seal1.wxml-->
+<!--pages/seal/seal.wxml-->
+<!--个人印章初始页面-->
+<view class="header">
+  <image src="{{tempFilePaths}}" class="camera" bindtap="picseal">
+  <text class="iconfont icon-shanchu2" class="shanchu"></text>
+  <text  class=" iconfont icon-zhaoxiangji" wx:if="{{image}}" ></text>
+ </image>
+  <text class="sealword">请上传您的印章</text>
+</view>
+<button class="confirm-btn" bindtap="took" >确认</button>
+

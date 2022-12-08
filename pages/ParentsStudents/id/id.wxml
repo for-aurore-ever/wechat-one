@@ -1,0 +1,21 @@
+<!--pages/id/id.wxml-->
+<view class="id">
+<view class="message">
+<text class="textLeft">您的名字</text>
+<text class="textRight">张昊</text>
+</view>
+<view class="message">
+<text class="textLeft">手机号</text>
+<text class="textRight">15952361256</text>
+</view>
+<view class="message">
+<text class="textLeft">您是孩子的</text>
+<text class="textRight">请选择</text>
+</view>
+<view class="message">
+<text class="textLeft">孩子身份证</text>
+<text class="textRight">请输入</text>
+</view>
+<text class="tip">注：请务必准确填写以上信息，方便匹配到您的孩子。</text>
+<button class="btn" style="width:560rpx">确定</button>
+</view>

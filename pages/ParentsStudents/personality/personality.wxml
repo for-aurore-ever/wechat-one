@@ -1,0 +1,30 @@
+<!--pages/personality/personality.wxml-->
+<view class="Countainer">
+<view class="header">
+<text>模块名称</text>
+<input class="name" placeholder="请写填写模块名称"   model:value="{{username}}"></input>
+</view>
+<view class="content">
+<view class="photo">
+<text>上传图片</text>
+</view>
+<view class="photoCountainer">
+  <view  class="img" wx:if="{{imgs !=''}}">
+    <image wx:for="{{imgs}}" wx:for-item="item" src="{{item}}" data-index="{{index}}" ></image>
+    <text class="iconfont icon-cuowuguanbiquxiao" data-index="{{index}}" catchtap="deleteImg"></text>
+</view>
+<view class="photovideo" bindtap="chooseImg" wx:else data-remark="1">
+<text class="add">+</text>
+<text class="title">上传图片/视频</text>
+</view>
+</view>
+</view>
+</view>
+<!-- 按钮盒子 start -->
+  <view class="btnContainer">
+    <!--按钮1 start  -->
+    <!-- <button class="confirm-btn1" bindtap="submit">保存并下一模块</button> -->
+    <!-- 按钮2 start -->
+    <button class="confirm-btn2" bindtap="goStart">保存</button>
+  <!-- 按钮盒子 end -->
+  </view>

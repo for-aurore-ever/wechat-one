@@ -1,0 +1,39 @@
+<!--pages/HeadTeacher/Details2/Details2.wxml-->
+<view class="column">
+
+<scroll-view class="left" scroll-y scroll-with-animation="{{true}}">
+
+  <view wx:for="{{DataList}}" bindtap="fnActive" data-index="{{index}}" class="name-list{{curIndex==index?'Show':''}}">
+    <text class="name" >{{item.name}}</text>
+  </view>
+</scroll-view>
+
+<view class="right">
+  
+  <view class="title">
+    <view class="one"> 
+      <text class="one-left">已完成学生名单</text>
+      <text class="one-right">分享</text>
+    </view>
+    <view>
+        <!-- 内容区 -->
+      <view class="nameChart" >  
+          <text class="name" wx:for="{{finish}}">{{item}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="title">
+      <view class="one"> 
+        <text class="one-left">未完成学生名单</text>
+        <text class="one-right">分享</text>
+      </view>
+      <view>
+          <!-- 内容区 -->
+        <view class="nameChart">  
+          <text class="name" wx:for="{{nofinsh}}">{{item}}</text>
+        </view>
+      </view>
+  </view>
+</view>
+
+</view>

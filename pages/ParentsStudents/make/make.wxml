@@ -1,0 +1,99 @@
+<!--pages/make/make.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<import src="../../tabbar/tabbar" />
+<template is="tabBar" data="{{tabBar}}" />
+<view class="Countainer">
+<!-- 头部导航 -->
+<view class="header" >
+  <view class="nameContainer" wx:for="{{childMessage}}" data-item="{{item}}" data-index="{{index}}" bindtap="cChildMessage">
+    <text class="name{{currentIndex==index?1:2}}">{{item.stuName}}</text>
+<!-- <text class="name2">{{item.stuName}}</text> -->
+  </view>
+
+</view>
+<view class="contentCountainer">
+<view class="content" catchtap="myFn" data-growthKey='0'>
+  <image class="photo" src="{{config.host}}/profile/static/images/01.png"></image>
+  <text class="title">这就是我</text>
+  <text class="eng">THIS  IS  ME</text>
+</view>
+<view class="content" catchtap="friendFn" data-growthKey='1'>
+  <image class="photo" src="{{config.host}}/profile/static/images/03.png"></image>
+    <text class="title">我和我的伙伴</text>
+    <text class="eng">MY  PARTNER  AND  I </text>
+  </view>
+<view class="content" catchtap="mywordFn" data-growthKey='12'>
+  <image class="photo" src="{{config.host}}/profile/static/images/05.png"></image>
+  <text class="title">我写的字</text>
+  <text class="eng">THE  WORDS  I WRITE</text>
+</view>
+<view class="content" catchtap="myhomeworkFn" data-growthKey='3'>
+  <image class="photo" src="{{config.host}}/profile/static/images/7.png"></image>
+  <text class="title">我的作业</text>
+  <text class="eng">MYHOMEWORK</text>
+</view>
+<view class="content"catchtap="essayFn" data-growthKey='4'>
+  <image class="photo" src="{{config.host}}/profile/static/images/9.png"></image>
+  <text class="title">我的作文</text>
+  <text class="eng">    MY COMPOSITION</text>
+</view>
+<view class="content" catchtap="examFn" data-growthKey='5'>
+  <image class="photo" src="{{config.host}}/profile/static/images/11.png"></image>
+  <text class="title">我的试卷</text>
+  <text class="eng">MY  PAPER</text>
+</view>
+<view class="content" catchtap="activeFn" data-growthKey='6'>
+  <image class="photo" src="{{config.host}}/profile/static/images/13.png"></image>
+  <text class="title">我参加的活动</text>
+  <text class="eng">ACTIVITIES  IPARTICIPATED  IN</text>
+</view>
+<view class="content" catchtap="attainmentFn" data-growthKey='13'>
+  <image class="photo" src="{{config.host}}/profile/static/images/15.png"></image>
+  <text class="title">学业素养报告单</text>
+  <text class="eng">SCHOOL  REPORT</text>
+</view>
+<view class="content" catchtap="massageFn" data-growthKey='2'>
+  <image class="photo" src="{{config.host}}/profile/static/images/17.png"></image>
+  <text class="title">老师寄语</text>
+  <text class="eng">  TEACHER' SMESSAGE</text>
+</view>
+<view class="content" catchtap="friendwordFn" data-growthKey='7'>
+  <image class="photo" src="{{config.host}}/profile/static/images/03.png"></image>
+  <text class="title">小伙伴的话</text>
+  <text class="eng">FROM  A  FPIEND</text>
+</view>
+<view class="content" catchtap="myhonourFn" data-growthKey='8'>
+<image class="photo" src="{{config.host}}/profile/static/images/19.png"></image>
+<text class="title">我的荣誉</text>
+<text class="eng">MY  HONER</text>
+</view>
+<view class="content" catchtap="semesterFn" data-growthKey='9'>
+<image class="photo" src="{{config.host}}/profile/static/images/21.png"></image>
+<text class="title">我的学期小结</text>
+<text class="eng">MY TERMSUMMARY</text>
+</view>
+<view class="content" catchtap="growFn" data-growthKey='10'>
+<image class="photo" src="{{config.host}}/profile/static/images/23.png"></image>
+<text class="title">我的十能成长目录</text>
+<text class="eng">MY  LIST  OF  TEN  TALENTS</text>
+</view>
+<view class="content" catchtap="personalityFn" data-growthKey='11'>
+<image class="photo1" src="{{config.host}}/profile/static/images/26.png"></image>
+<text class="title">个性</text>
+<text class="eng">PERSONALITY</text>
+</view>
+</view>
+<!-- <view class="rootCountainer">
+<view class="root1">
+<image  class="img1" src="../../../static/images/成长.png"></image>
+<text>成长报告</text>
+</view>
+<view class="border">
+<image class="img2" src="../../../static/images/主页.png"></image>
+</view>
+<view class="root1">
+<image class="img1" src="../../../static/images/我的.png"></image>
+<text>我的</text>
+</view>
+</view> -->
+</view>

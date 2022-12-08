@@ -1,0 +1,234 @@
+/* pages/report2/report2.wxss */
+page{
+  background-color:#f7f8fa;
+  position: absolute;
+}
+/*整个页面*/
+.continer{
+  height:100%;
+  width: 100%;
+  position: absolute;
+}
+/*名字区*/
+.name{
+  display: flex;
+  height: 80rpx;
+  width: 400rpx;
+}
+.nameContainer{
+  display: flex;
+  /* justify-content:space-between; */
+  /* align-items: center; */
+  margin-left: 20rpx;
+}
+.header{
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  margin-left: 30rpx;
+  margin-top: 5rpx;
+  align-items: center;
+  
+}
+
+.word{
+  height:80rpx;
+  width: 700rpx;
+}
+/*张大大*/
+.name1{
+  margin-left:40rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  font-size:32rpx;
+  border-bottom: 8rpx solid #7C0000;
+}
+/*张小小*/
+.name2{
+  margin-left: 48rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  font-size:28rpx;
+  color:#999999;
+}
+/*右边切换模式框*/
+.changes{
+  width: 200rpx;
+  line-height: 80rpx;
+  font-size:24rpx;
+}
+/*文字切换模式*/
+.Continer .change{
+  color: #7c0000;
+  /* margin-bottom:20rpx;  */
+  /*padding-bottom: 10rpx;*/
+  font-size:24rpx;
+  line-height: 50rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  margin: 10rpx;
+}
+/*头部导航框*/
+.Continer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rpx;
+  background-color: #fff;
+  height:100rpx;
+}
+/*下面主体区*/
+.body{
+  display: flex;
+}
+/*侧边导航区*/
+.nav{
+  width: 200rpx;
+}
+/*按钮*/
+.btn2{
+  height:80rpx;
+  background-color:#F7F8FA;
+  font-size:24rpx;
+  color:#666666;
+  margin-bottom: 2rpx;
+  padding:16rpx 0rpx;
+}
+/*选中的按钮*/
+.btn1{
+  height:80rpx;
+  font-size:24rpx;
+  color:#666666;
+  padding:16rpx 0rpx;
+  margin-bottom: 2rpx;
+  background-color:#fff;
+  border-left:8rpx solid #7C0000;
+}
+/*右边的模板*/
+.report2{
+  height: 100%;
+   width:550rpx;
+   background-color:#fff;
+}
+
+/*成长报告框*/
+.box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-left: 96rpx;
+  background-color: #fff;
+}
+/*一份成产报告框*/
+.one {
+  position: relative;
+  padding-bottom: 40rpx;
+}
+/*第一份成长报告的圆点/制作中的成长报告的圆点*/
+.onedotActive {
+  left: -2rpx;
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  background-color: #7C0000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+/*完成的成长报告的圆点*/
+.onedotNoActive{
+  left: -2rpx;
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  background-color: #999999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+/*虚线*/
+.oneline {
+  position: absolute;
+  left: 8rpx;
+  height: 100%;
+  border-left: 2px dashed #c8c8c8;
+}
+/*第二份成长报告*/
+.onemain {
+  position: relative;
+  padding-left: 56rpx;
+  top: -6rpx;
+  justify-content: space-between
+}
+/*学期*/
+.onemaintitle {
+  margin-bottom: 16rpx;
+  padding-top: 8rpx;
+  color:#101010;
+  line-height: 1;
+  font-size: 28rpx;
+  font-weight: 545;
+  float: left;
+}
+/*第二份成长报告框*/
+.onemaincon {
+  color: #303133;
+}
+/*制作中的照片框*/
+.photo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 266rpx;
+  width: 202rpx;
+  border: 2px dashed #7C0000;
+}
+
+/*完成的照片框*/
+.photo1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 266rpx;
+  width: 202rpx;
+  border: 2px dashed #c8c8c8;
+}
+/*成长报告里的图片*/
+.img{
+  height: 76rpx;
+  width: 90rpx;
+}
+.img2{
+  height: 82rpx;
+  width: 80rpx;
+}
+/*成长报告里的文字*/
+.word1{
+  margin-top:24rpx;
+  align-items: center;
+  font-size:24rpx;
+}
+
+/*成长报告里的英文*/
+.word2{
+  margin-top:8rpx;
+  font-size:22rpx;
+  color:#999999;
+  height: 66rpx;
+  width: 152rpx;
+}
+
+.word3{
+  margin-top:8rpx;
+  margin-left:40rpx;
+  font-size:22rpx;
+  color:#999999;
+  height: 66rpx;
+  width: 152rpx;
+}
+

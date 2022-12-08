@@ -1,0 +1,32 @@
+<!--pages/myhonour/myhonour.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view  wx:if="{{show==false}}">
+    <view  class="container11">
+      <image class="cimage" src="{{config.host}}/profile/static/images/41.png"></image>
+    </view>
+    <text class="ctext">此页面您无需操作，请耐心等待班主任统一上传荣誉!</text>
+</view>
+<view wx:else>
+  <view class="containerImage" >
+<image src="{{config.host}}/profile/static/images/honor.png"></image>
+</view>
+<view class="photo15">
+  <image class="award10" src="{{config.host}}/profile/static/images/ward.png"></image>
+  <view >
+    <image class="texec1" src='{{config.host}}{{list[0]}}'></image>
+  </view>
+</view>
+<view class="photo16">
+  <image class="award11" src="{{config.host}}/profile/static/images/ward.png"></image>
+  <view >
+    <image class="texec2"  src='{{config.host}}{{list[1]}}'></image>
+  </view>
+</view>
+<view class="photo17">
+  <image class="award12" src="{{config.host}}/profile/static/images/ward.png"></image>
+  <view >
+    <image class="texec3" src='{{config.host}}{{list[2]}}'></image>
+  </view>
+</view>
+<button class="confirm-btn1" bindtap="goNext">下一模块</button>
+</view>

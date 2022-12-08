@@ -1,0 +1,76 @@
+/* pages/check/check.wxss */
+page{
+  background-color: #f7f8fa;
+}
+.header{
+  background-color:#ffffff;
+  height: 548rpx;
+  border-top:4rpx solid #f7f8fa;
+}
+.camera{
+background-color:#f7f8fa ;
+width: 200rpx;
+height: 200rpx;
+border-radius :50%;
+margin: 90rpx 276rpx 0rpx 274rpx;
+}
+/*相机图标*/
+.icon-zhaoxiangji{
+  display: flex;
+  font-size: 100rpx;
+  color: #d1d1d1;
+  justify-content: center;
+  margin-top: -145rpx;
+}
+/*提示语句*/
+.sealword{
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx; 
+  font-size:28rpx;
+  color:#999999;
+}
+/*性别*/
+.sex{
+  margin-top:48rpx;
+  height:80rpx;
+  width:200rpx;
+  border-radius: 50rpx;
+  margin-left:276rpx;
+}
+/*信息条*/
+.message1{
+  background-color:#fff;
+  display:flex;
+  justify-content:space-between;
+  margin-top:4rpx;
+  height:90rpx;
+}
+/*左边文字*/
+.name{
+  line-height:90rpx;
+  font-size:32rpx;
+  margin-left:38rpx;
+}
+/*右边文字*/
+.name1{
+  line-height:90rpx;
+  font-size:28rpx;
+  color:#999999;
+  margin-right:32rpx;
+}
+/*提示语句*/
+.tip{
+  margin-left:38rpx;
+  font-size:24rpx;
+  color:#999999;
+}
+/*按钮*/
+.btn{
+  margin-top:90rpx;
+  background-color:#7C0000;
+  border-radius: 50rpx;
+  font-size:32rpx;
+  color:#fff;
+  height:80rpx;
+}

@@ -1,0 +1,47 @@
+<!--pages/HeadTeacher/student/student.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<!--pages/student/student.wxml-->
+<!--最上面带头像的导航栏-->
+<view class="continer">
+  <view class="personal">
+    <view class="personalx">
+      <image class="img" src="{{config.host}}/profile/static/images/personal/bglmg.jpg"></image>
+    </view>
+  <view>
+    <text class="name">{{stuName}}</text>
+    <image class="gender" src="{{config.host}}/profile/static/images/nanhai1.png"></image>
+  </view>
+  <text class="symbol" bindtap="goBasicInformation">></text>
+  </view>
+  <!--中上方方形式切换部分-->
+
+  <view class="Continer">
+    <view class="changes">
+      <text class="iconfont icon-qiehuan" style="color:#7c0000"></text>
+      <text class="change">模式切换</text>
+    </view>
+  </view>
+  <!--中下方成长报告展示-->
+    <view class="box">
+    <view class="one">
+    <view class="onedotActive"></view>
+    <view class="oneline"></view>
+    <view class="onemain">
+      <view class="onemaintitle">2021学年第二学期</view>
+      <view class="onemainstate">
+          制作中
+      </view>
+      <view class="onemaincon"><navigator><image></image></navigator></view>
+    </view>
+  </view>
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+      <view class="onemaintitle">2021学年第一学期</view>
+      <view class="onemaincon">
+      <navigator><image></image></navigator></view>
+    </view>
+  </view>
+</view>
+</view>

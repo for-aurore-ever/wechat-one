@@ -1,0 +1,85 @@
+
+/* pages/class/class.wxss */
+.continer{
+  color: #7c0000;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  display:flex;
+
+}
+
+
+.continer .search{
+  width: 670rpx;
+  height: 60rpx;
+  color: #7c0000;
+  border-radius: 40rpx;
+  border: 2rpx solid #7c0000 ;
+  font-size: 34rpx;
+  display: flex;
+  margin-top:14rpx 
+}
+
+.continer .btn{
+  line-height:65rpx ;
+  padding: 0;
+  height: 65rpx;
+  margin-top:14rpx ;
+  border-radius: 40rpx;
+  width: 105rpx;
+  margin-left: -105rpx;
+  background-color: #7c0000;
+  font-size: 27rpx;
+  color: #f3f1f8;
+}
+
+.banji1{
+  /* display: flex; */
+  margin-left:20rpx ;
+  margin-right: 40rpx;
+  border-bottom:4rpx solid #7c0000;
+}
+.banji2{
+  margin-left:20rpx;
+  margin-right: 40rpx;
+}
+.banji3{
+  display: flex;
+  margin-top: 38rpx;
+  margin-left: 40rpx;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+.banji3 .student .gender{
+  height: 60rpx;
+  width: 130rpx;
+  margin-top: 14rpx;
+  margin-left: 0rpx;
+}
+.banji3 .student{
+  margin-top: 24rpx;
+  margin-right: 40rpx;
+  display: flex;
+  width: 308rpx;
+  height: 152rpx;
+  border:2rpx solid #f2f2f2;
+}
+.banji3 .student .student2{
+  display: flex;
+  flex-direction: column;
+  width: 308rpx;
+  height: 152rpx;
+}
+.banji3 .student .name{
+  margin-top: 20rpx;
+  margin-left: 14rpx;
+  font-size: 33rpx;
+}
+.banji3 .student .touxiang{
+  border-radius: 50%;
+  width: 240rpx;
+  height: 120rpx;
+  margin-top: 16rpx;
+  margin-right: 20rpx;
+}
+

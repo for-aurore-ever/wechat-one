@@ -1,0 +1,296 @@
+page {
+  width: 100%;
+  background-color: rgb(247, 248, 250);
+}
+
+/* 环图部分 */
+.ring {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  height: 400rpx;
+  margin-top: 4rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+ /* 文本内容 */
+ .text {
+  margin: 20rpx 40rpx 0 40rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.text .symbol {
+  font-size: 35rpx;
+  font-weight: bold;
+  margin: 0 18rpx 0 0;
+  color: rgb(135, 22, 22);
+}
+
+.text .right {
+  float: right;
+  margin-right: 32rpx;
+  font-size: 28rpx;
+  color: rgb(135, 22, 22);
+}
+
+/* 环图 */
+.ringCharts {
+  width: 360rpx;
+  height: 336rpx;
+}
+
+.ring .Information {
+  display: flex;
+  flex-direction: row            ;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+/* 状态栏 */
+.stateCharts {
+  display: flex;
+  margin: 66rpx 40rpx 0 10rpx;
+  flex-direction: column;
+}
+.stateCharts .state {
+  font-weight:700;
+  color: "#101010";
+  font-size: 12px;
+  margin-bottom: 4rpx;
+}
+.stateCharts .name {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16rpx;
+  color: "#666666";
+  font-size: 14px;
+}
+
+.stateCharts .name .round {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  margin: 10rpx 8rpx 0 0;
+}
+
+/* 学生名单标签 */
+.list {
+  margin: 20rpx 20rpx 0 20rpx;
+}
+
+.list .one {
+  padding: 20rpx 20rpx 8rpx 20rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.list .one .left {
+  padding-bottom: 6rpx;
+}
+
+.property .button {
+  border-bottom: 4rpx solid #871616;
+}
+
+.one .right {
+  float: right;
+  color: rgb(135, 22, 22);
+}
+
+/* 学生名单 */
+.nameList {
+  margin-top: 4rpx;
+  padding: 0 0 30rpx 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.nameChart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameChart .name {
+  margin: 30rpx 20rpx 0 20rpx;
+  font-size: 14px;
+  width: 84rpx;
+  height: 40rpx;
+  color: rgba(102, 102, 102, 1);
+}
+
+/* 分享窗口 */
+.mask{
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  background-color: rgba(56, 55, 55, 0.651);
+}
+
+.windows {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 23%;
+  margin-top: 480rpx;
+  border-radius: 20rpx;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  display: flex;
+  height: 40rpx;
+  margin: 24rpx 0 10rpx 0;
+}
+
+.radio-group {
+  width: 100%;
+  display: flex;
+  padding-top: 36rpx;
+  border-top: 4rpx solid #F5F5F5;
+}
+
+.radio-group .radio {
+  margin-left: 84rpx;
+}
+
+radio .wx-radio-input{
+  width: 25rpx;
+  height: 25rpx;
+  border-radius: 50%;
+  }
+
+radio .wx-radio-input.wx-radio-input-checked {
+  background: #2861F0 !important;
+  border-color:#2861F0 !important;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 18rpx;
+  height: 18rpx;
+  line-height: 18rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  }
+
+
+
+.bottom-two {
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.bottom-two .yes {
+  font-size: 14px;
+  border-radius: 10rpx;
+  color: rgb(255, 255, 255);
+  padding: 18rpx 72rpx 18rpx 72rpx;
+  background-color: rgb(135, 22, 22);
+}
+
+.bottom-two .no {
+  font-size: 14px;
+  margin-left: 72rpx;
+  border-radius: 10rpx;
+  border: 4rpx solid #F5F5F5;
+  padding: 18rpx 68rpx 18rpx 68rpx;
+}
+
+
+/* 底部下拉弹窗区域 */
+
+/*对话框 */
+.commodity_attr_box {
+  left: 0;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2000;
+  background: #fff;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+}
+/* 两个图标和按钮包裹器 */
+.iconContainer{
+  display: flex;
+}
+/* 图标大区域 */
+.icons{
+  text-align: center;
+  width: 50%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top:30rpx ;
+  line-height: 80rpx;
+}
+/* 单个图标 */
+.icons icon{
+  width: 50%;
+  margin: 0 auto;
+}
+/* 按钮包裹区 */
+.btnContainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+/* 按钮 */
+.btnContainer .btn1{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#fff;
+  line-height: 100rpx;
+  border-bottom: 2rpx  solid #e6e6e6;
+  border-top: 2rpx  solid #e6e6e6;
+  border-radius: 0;
+}
+
+/* 单选通知 */
+.notice {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+  margin-top: 200rpx;
+  border-radius: 20rpx;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-group .notice-one {
+  margin: 24rpx 0 10rpx 0;
+}
+
+.radio-one {
+  width: 140rpx;
+  height: 50rpx;
+  margin: 0 40rpx 40rpx 80rpx;
+}
+

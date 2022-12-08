@@ -1,0 +1,62 @@
+<!--pages/HeadTeacher/stuManagement/stuManagement.wxml-->
+<!--pages/stuManagement/stuManagement.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view>
+<view class="nav">
+<view class="nav1">
+<text>全部</text>
+</view>
+<view class="nav2">
+<text bindtap="todetail">待审核</text>
+</view>
+<view class="nav3">
+<text bindtap="todetailok">已审核</text>
+</view>
+<view class="nav4">
+<text bindtap="todetailno">被退回</text>
+</view>
+</view>
+<view class="student1">
+ <image src="{{config.host}}/profile/static/images/tx.jpg" class="img1"></image>
+ <view class="stuInfo">
+ <view class="info">
+ <text class="name1">王朔示</text>
+ <text class="check">待审核</text>
+ </view>
+ <image class="sex" src="{{config.host}}/profile/static/images/nan.png"></image> 
+</view>
+</view>
+<view class="student1">
+ <image src="{{config.host}}/profile/static/images/tx.jpg" class="img1"></image>
+ <view class="stuInfo">
+ <view class="info">
+ <text class="name1">张浩净</text>
+ <text class="check">待审核</text>
+ </view>
+ <image class="sex" src="{{config.host}}/profile/static/images/nan.png"></image> 
+</view>
+</view>
+<view class="student1">
+ <image src="{{config.host}}/profile/static/images/tx.jpg" class="img1"></image>
+ <view class="stuInfo">
+ <view class="info">
+ <text class="name1">张亦瑶</text>
+ <text class="check">被退回</text>
+ </view>
+ <image class="sex" src="{{config.host}}/profile/static/images/nan.png"></image> 
+</view>
+</view>
+
+<view class="student1">
+ <image src="{{config.host}}/profile/static/images/tx.jpg" class="img1"></image>
+ <view class="stuInfo">
+ <view class="info">
+ <text class="name1">张宇尚</text>
+ <text class="check">待审核</text>
+ </view>
+ <image class="sex" src="{{config.host}}/profile/static/images/nan.png"></image> 
+</view>
+</view>
+
+</view>
+

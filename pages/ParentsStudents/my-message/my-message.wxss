@@ -1,0 +1,86 @@
+/* pages/my-message/my-message.wxss */
+page{
+  background-color: #f7f8fa;
+  height: 100%;
+}
+/* 头部头像 */
+.messageComtainer .header{
+  justify-content: space-between;
+  margin-top: 20rpx;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+ background-color:#fff;
+ line-height:80rpx ;
+}
+/* 头部头像的图片 */
+.messageComtainer .header image{
+  margin-top: 10rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  width: 60rpx;
+  margin-bottom: 10rpx;
+  /* margin-right: 80rpx; */
+  
+}
+/* 头部头像的文字 */
+.messageComtainer .header .text{
+ padding-left: 30rpx;
+  float: right;
+}
+
+/* 中间姓名 */
+.nameTop{
+  justify-content: space-between;
+  margin-top: 6rpx;
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  background-color:#fff;
+  line-height:90rpx ;
+}
+/* 中间姓名的左边文字 */
+.nameTop .text{
+    padding-left: 30rpx;
+     float: right;
+}
+
+/*底部手机号码  */
+.number{
+  justify-content: space-between;
+  margin-top: 20rpx;
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  background-color:#fff;
+  line-height:90rpx ;
+}
+/* 底部手机号码的左边文字 */
+.number .text{
+  padding-left: 30rpx;
+   float: right;
+}
+/* 按钮 */
+.confirm-btn{
+  width: 540rpx!important;
+  height: 76rpx; 
+  line-height: 76rpx; 
+  border-radius: 50rpx; 
+  margin-top:500rpx ;
+  border: 2rpx solid #9b4f51;
+  color: #7f1c1e;
+  font-size: 28rpx; 
+  font-weight: 380;
+  padding: 0;
+}
+/* 右边文字 */
+.name{
+  margin-right: 30rpx;
+  color: #999999;
+  font-size: 28rpx;
+}
+/* 右侧图标 */
+.icon{
+  color: #999999;
+  font-size: 28rpx;
+}

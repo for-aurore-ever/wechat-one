@@ -1,0 +1,36 @@
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<import src="../../tabbar/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+<view class="CONTINER">
+  <view class="continer" >
+    <text class="top{{currentIndex==0?1:2}}" bindtap="getStatus" data-status='0' data-index="0">未填写</text>
+    <text class="top{{currentIndex==0?2:1}}" bindtap="getStatus" data-index="1" data-status='1'>已填写</text>
+  </view>
+<!--班级栏-->
+<!--班级成员信息-->
+  <view class="banji3"  wx:for="{{statusMessage}}" wx:for-index="key" wx:for-item="value">
+    <view >
+      <view class="banjiContainer" >
+        <text class="banji" >{{key}}</text>
+      </view>
+      <view class="studentContainer" >
+        <view class="studentContainer2" >
+          <view class="student"   wx:for="{{value}}" wx:for-index="idx3" wx:for-item="item3" bindtap="goSendWord">
+            <view class="student2"   bindtap="getStudentId" data-item="{{item3}}">
+                <text class="name" >{{item3.stuName}}</text>
+                <image 
+                class="gender" 
+                src="{{item3.sex==0?config.host+'/profile/static/images/nanhai1.png':'../../../static/images/nvsheng.png'}}">
+                </image>
+            </view>
+            <image class="touxiang" wx:if="{{item3.avatar=='' && item3.sex==0}}" src="../../../static/images/boy.png" ></image>
+            <image class="touxiang" wx:if="{{item3.avatar=='' && item3.sex==1}}" src="../../../static/images/girl.png" ></image>
+            <image class="touxiang" wx:if="{{item3.avatar!==''}}" src="{{config.host+'/getFile?name='+item3.avatar}}" ></image>
+                <!-- <image class="touxiang" src="{{item3.avatar==''?'../../../static/images/moren.jpg':config.host+'/getFile?name='+item3.avatar}}"></image> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

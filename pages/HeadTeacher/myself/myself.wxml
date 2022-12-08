@@ -1,0 +1,72 @@
+<!--pages/HeadTeacher/myself/myself.wxml-->
+<import src="../../tabbar/tabbar.wxml" />
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<template is="tabBar" data="{{tabBar}}" />
+<view class="Countainer">
+<!-- 头部 -->
+<view class="teacher">
+<!-- <image src="{{getfile}}"></image> -->
+<image src="{{getfile1==''?'../../../static/images/moren.jpg':config.host+'/getFile?name='+getfile1}}"></image>
+<view class="name">
+<text>教师</text>
+</view>
+ <text class="iconfont icon-guanbi" style="color:#acacac" bindtap="goTeacherMyMessage"></text>
+</view>
+</view>
+<!-- 学生管理头部 -->
+<view class="studentCountainer">
+<view class="content1">
+  <view class="navcontent" bindtap="tostudenthonor2">
+  <text class="iconfont icon-huizhang"></text>
+  <text>学生荣誉</text>
+  </view>
+  <text bindtap="tostudenthonor2" class="iconfont icon-guanbi" style="color:#acacac"></text>
+</view>
+<view class="content1">
+  <view class="navcontent">
+  <text class="iconfont icon-icon-"></text>
+  <text bindtap="tophotos">班级图库</text>
+  </view>
+  <text bindtap="tophotos" class="iconfont icon-guanbi" style="color:#acacac"></text>
+</view>
+<view class="content2"  bindtap="toadd_teachers_complete">
+  <view class="navcontent">
+  <text class="iconfont icon-peizhiguanli"></text>
+  <text>老师配置</text>
+  </view>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+</view>
+<view class="content3">
+  <view class="navcontent" bindtap="toseal">
+  <text class="iconfont icon-yinzhang"></text>
+  <text>印章</text>
+  </view>
+  <text bindtap="toseal" class="iconfont icon-guanbi" style="color:#acacac"></text>
+</view>
+<view class="content4">
+  <view class="navcontent">
+  <text class="iconfont icon-shezhi"></text>
+  <text>设置</text>
+  </view>
+  <text class="iconfont icon-guanbi" style="color:#acacac" bindtap="gosetup"></text>
+</view>
+</view>
+<!-- 底部 -->
+<!-- <view class='buttomContainer'>
+    <view class="buttomItem" bindtap="toclass">
+      <text class='iconfont icon-tuceng'></text>
+      <text>班级</text>
+    </view>
+    <view class="buttomItem" bindtap="togrow">
+      <text class="iconfont icon-tongji"></text>
+      <text >统计</text>
+    </view>
+    <view class="buttomItem" bindtap="tosendword">
+      <text class='iconfont icon-xinfeng2'></text>
+      <text>寄语</text>
+    </view>
+    <view class="buttomItem">
+      <text class='iconfont icon-wode-wodefensi'></text>
+      <text class="wode">我的</text>
+    </view>
+  </view> -->

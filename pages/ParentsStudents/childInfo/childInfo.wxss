@@ -1,0 +1,51 @@
+/* pages/childInfo/childInfo.wxss */
+page{
+  background-color: #f7f8fa;
+}
+.header{
+  background-color:#ffffff;
+  height: 548rpx;
+  border-top:4rpx solid #f7f8fa;
+}
+.img{
+width: 200rpx;
+height: 200rpx;
+border-radius :50%;
+margin: 90rpx 276rpx 0rpx 274rpx;
+background-color: #E4EEFA;
+}
+.img1{
+  border-radius:50% ;
+  height: 200rpx;
+  width:200rpx;
+  /* margin:20rpx 24rpx 24rpx 20rpx; */
+}
+/*性别*/
+.sex{
+  margin-top:128rpx;
+  height:80rpx;
+  width:200rpx;
+  border-radius: 50rpx;
+  margin-left:276rpx;
+}
+/*信息条*/
+.message1{
+  background-color:#fff;
+  display:flex;
+  justify-content:space-between;
+  margin-top:4rpx;
+  height:90rpx;
+}
+/*左边文字*/
+.name{
+  line-height:90rpx;
+  font-size:32rpx;
+  margin-left:38rpx;
+}
+/*右边文字*/
+.name1{
+  line-height:90rpx;
+  font-size:28rpx;
+  color:#999999;
+  margin-right:32rpx;
+}

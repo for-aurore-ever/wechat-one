@@ -1,0 +1,34 @@
+/* pages/setup/setup.wxss *//* pages/setup/setup.wxss */
+page{
+  background-color: #f7f8fa
+}
+.Countainer{
+  margin-top: 6rpx;
+}
+.Countainer .box{
+  display: flex;
+  margin-bottom: 6rpx;
+  /*  */
+  justify-content: space-between;
+  padding: 30rpx 35rpx;
+  background-color: #ffffff;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.store{
+color: rgba(153, 153, 153, 1);
+font-size: 32rpx;
+margin-left: 370rpx;
+}
+.iconfont{
+font-size: 32rpx;
+}
+
+
+
+
+.icon-shanchu:before {
+  content: "\e61a";
+  color: rgba(127, 127, 127, 1);
+  margin-left: 80rpx;
+}

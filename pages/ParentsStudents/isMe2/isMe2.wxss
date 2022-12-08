@@ -1,0 +1,81 @@
+/* pages/isMe2/isMe2.wxss */
+.Continer{
+  margin-top: 5rpx;
+}
+.Continer .semester{
+  display: flex;
+  height:50rpx;
+  font-size:30rpx;
+  justify-content:space-between; /*使页面的>符移到右边*/
+  padding: 20rpx 20rpx;
+  background-color: #fff;
+  margin: 10rpx 10rpx;
+  line-height: 50rpx;
+  margin-left: 0rpx;
+  margin-top: 0rpx;
+  border-bottom:4rpx solid #7c0000;
+  border-bottom-width: 6rpx;
+  
+}
+
+.Continer .change{
+  color: #7c0000;
+  /* margin-bottom:20rpx;  */
+  /*padding-bottom: 10rpx;*/
+  font-size:24rpx;
+  line-height: 50rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  margin: 10rpx;
+}
+.Continer .gander{
+  display: flex;
+  height:50rpx;
+  font-size:28rpx;
+  justify-content:space-between; /*使页面的>符移到右边*/
+  padding: 0rpx 20rpx;
+  background-color: #fff;
+  margin: 0rpx 0rpx;
+  line-height: 50rpx;
+}
+.Continer .gander{
+  margin-right: 30rpx;
+  justify-content:space-between;
+}
+.Continer .changes{
+  margin-top: 20rpx;
+}
+.Continer .recommendScroll{
+  margin-top: 73rpx;
+  /* margin-left: 42rpx;
+  margin-right: 42rpx; */
+}
+.Continer .recommendScroll .scrollItem{
+  height: 848rpx;
+  width:600rpx;
+  /* margin: 0 auto; */
+  margin-left: 85rpx;
+}
+.Continer .recommendScroll .scrollItem image{
+  width: 600rpx;
+  height: 848rpx;
+
+}
+.continer{
+  color: #7c0000;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  display:flex;
+
+}
+.Continer .search{
+   width: 560rpx!important;
+  height: 80rpx; 
+  line-height: 76rpx; 
+   border-radius: 50rpx; 
+  margin-top: 90rpx;
+   background: #7c0000;
+  color: #fff;
+  font-size: 32rpx; 
+  padding: 0;
+}

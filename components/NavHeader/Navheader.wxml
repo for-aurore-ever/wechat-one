@@ -1,0 +1,11 @@
+<view class="headerContainer">
+      <view class="studentSelect">
+        <navigator class="stu1">张大大</navigator>
+        <navigator class="stu2" url="../model2/model2/model2">张小小</navigator>
+      </view>
+      <navigator class="model">
+        <text>&&</text>
+        <icon></icon>
+        <text>模式切换</text>
+      </navigator>
+  </view>

@@ -1,0 +1,20 @@
+<!--pages/award/award.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/38.png"></image>
+</view>
+
+<view class="photo">
+<image class="award1" src="{{config.host}}/profile/static/images/43.png"></image>
+<!-- <image class="word1" src="/pages/static/images/文明学生.png"></image> -->
+</view>
+<view class="photo">
+<image class="award2" src="{{config.host}}/profile/static/images/43.png"></image>
+<!-- <image  class="word2" src="/pages/static/images/梦想领袖.png"></image> -->
+</view>
+<view class="photo">
+<image class="award3" src="{{config.host}}/profile/static/images/43.png"></image>
+<!-- <image class="word3" src="/pages/static/images/模范学生.png"></image> -->
+</view>
+</view>

@@ -1,0 +1,23 @@
+/* pages/await/await.wxss */
+page{
+ background-color: rgba(247, 248, 250, 1);
+}
+.Countainer{
+    height: 100%;
+    position:absolute;
+  
+}
+/* 背景图片 */
+.background image{
+  display: flex;
+  margin: 0 auto;
+  height: 1000rpx;
+  padding: 30rpx 30rpx;
+  position: relative;
+  width: 700rpx;
+}
+.title{
+  font-size: 32rpx;
+  margin-left: 30rpx;
+  color: rgba(153, 153, 153, 1);
+}

@@ -1,0 +1,98 @@
+/* pages/my/my.wxss */
+page{
+  background-color: #f7f8fa;
+}
+/*头像栏*/
+.tital{
+  display: flex;
+  height: 240rpx;
+  background-color: #fff;
+  margin-top:4rpx;
+}
+/*头像图片*/
+.img{
+  background-color: #E4EEFA;
+  height: 140rpx;
+  width: 140rpx;
+  margin:50rpx 0rpx 50rpx 52rpx;
+  border-radius: 50%;
+}
+/*文字家长*/
+.jiazhang{
+  margin-left: 48rpx;
+  margin-top: 60rpx;
+  height: 48rpx;
+  width: 92rpx;
+  font-size:24rpx;
+  color:#fff;
+  background-color:#7C0000;
+  text-align: center;
+  line-height: 48rpx;
+  border-radius: 8rpx;
+}
+/*图标*/
+.icon{
+  margin-left:350rpx;
+  margin-top: 68rpx;
+  height: 32rpx;
+  width:32rpx
+}
+/*孩子的信息条
+justify-content: space-between; 让子元素均匀的水平布满盒子，每个子元素距离都一样。
+*/
+.message1{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 20rpx;
+  height: 90rpx;
+  font-size:32rpx;
+  line-height:90rpx;
+}
+/*包含孩子图标和文字的盒子*/
+.message{
+  margin-left: 40rpx;
+}
+/*图标*/
+.icon2{
+  height: 54rpx;
+  width:56rpx;
+}
+/*文字孩子*/
+.text{
+  margin-left:20rpx;
+  font-size:32rpx;
+  line-height: 90rpx;
+  margin-bottom:20rpx;
+}
+.icon1{
+  margin-right: 37rpx;
+  line-height: 90rpx;
+  margin-top: 10rpx;
+}
+/*图库*/
+.message2{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 6rpx;
+  height: 90rpx;
+  font-size:32rpx;
+  line-height:90rpx;
+}
+/*设置*/
+.message3{
+  margin-left:-30rpx ;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 6rpx;
+  height: 90rpx;
+  font-size:32rpx;
+  line-height:90rpx;
+}
+/*小孩图片*/
+.img1{
+  height:54rpx;
+  width:56rpx;
+}

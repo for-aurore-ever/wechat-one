@@ -1,0 +1,90 @@
+<!--pages/confirm/confirm.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Countainer">
+ <view class="study">
+  <image src="{{config.host}}/profile/static/images/1.1.png"></image>
+  <view class="research1">
+  <view class="contentname">
+  <text>这就是我</text>
+  </view>
+  <view class="contenttime">
+  <text>2022-06-01</text>
+  </view>
+  </view>
+  <view class="mark"bindtap="clickme">
+  <text class="iconfont icon-gengduo"></text>
+  </view>
+</view>
+<view class="study">
+  <image src="{{config.host}}/profile/static/images/1.2.png"></image>
+  <view class="research2">
+  <view class="contentname">
+  <text>20220108-21345.jpg</text>
+  </view>
+  <view class="contenttime">
+  <text>2022-06-01</text>
+  </view>
+  </view>
+  <view class="mark" bindtap="clickme">
+  <text class="iconfont icon-gengduo"></text>
+  </view>
+</view>
+  <view>
+    <button class='btn' style="width:75%" >+ 上传图片</button>
+  </view>
+</view>
+<!-- 底部弹框 -->
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<!--自定义弹窗内容-->
+<view class="runstyle">
+  <image src="{{config.host}}/profile/static/images/1.1.png"></image>
+  <view class="title">
+  <text>这就是我</text>
+  </view>
+</view>
+<view class="edit">
+<view class="delect" bindtap="submit">
+  <text class="iconfont icon-delete"></text>
+  <text>删除</text>
+</view>
+<view class="rename" bindtap="submit2">
+<text class="iconfont icon-zhongmingming"></text>
+<text>重命名</text>
+</view>
+</view>
+<view class="cancel">
+<text>取消</text>
+</view>
+</view>
+<!--删除-弹框 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="theme1">
+  <text>确认删除</text>
+  </view>
+  <view class="theme2">
+  <text>确认删除所选图片吗？</text>
+  </view>
+  <view class="confirm">
+  <button class="yes">确定</button>
+  <button class="no" bindtap="go">取消</button>
+  </view>
+</view>
+<!--重命名-弹框 -->
+<view class="mask" catchtouchmove="preventTouchMove2" wx:if="{{showModal2}}"></view>
+<view class="modalDlg" wx:if="{{showModal2}}">
+  <view class="theme1">
+  <text>重命名</text>
+  </view>
+  <view class="theme3">
+  <text>20220108-21345.jpg</text>
+  <text class="iconfont icon-icon-cross-empty"></text>
+  </view>
+  <view class="confirm">
+  <button class="yes">确定</button>
+  <button class="no" bindtap="go2">取消</button>
+  </view>
+</view>

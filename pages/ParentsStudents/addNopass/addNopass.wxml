@@ -1,0 +1,7 @@
+<!--pages/addNopass/addNopass.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="addPass">
+<image src="{{config.host}}/profile/static/images/shenhe.png" class="img"></image>
+<text class="word1">审核未通过</text>
+<text class="word2">很遗憾，您提交的信息未审核通过，请修改后重新提交，<text class="word3">重新提交</text></text>
+</view>

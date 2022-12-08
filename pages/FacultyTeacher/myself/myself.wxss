@@ -1,0 +1,136 @@
+/* pages/HeadTeacher/myself/myself.wxss */
+page{
+  background-color: rgba(247, 248, 250, 1);
+}
+/* 头部 */
+.teacher image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-left: 30rpx;
+}
+.teacher{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(255, 255, 255, 1);
+margin-top: 8rpx;
+height: 220rpx;
+
+}
+.teacher .name{
+border: 2px solid rgba(124, 0, 0, 1);
+border-radius: 8rpx;
+background-color: rgba(124, 0, 0, 1);
+text-align: center;
+line-height: 40rpx;
+width: 90rpx;
+color: rgba(255, 255, 255, 1);
+font-size: 24rpx;
+margin-right: 250rpx;
+margin-bottom: 40rpx;
+}
+.iconfont{
+  margin-right: 40rpx;
+  font-size: 28rpx;
+}
+.massage .title{
+  margin-left: 30rpx;
+  font-size: 35rpx;
+
+}
+.massage .all{
+ margin-left: 420rpx;
+ font-size: 27rpx;
+ color: rgba(153, 153, 153, 1);
+}
+/* 学生管理导航区 */
+.massage{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(255, 255, 255, 1);
+margin-top: 20rpx;
+height: 90rpx;
+font-size: 38rpx;
+}
+.check{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  height: 200rpx;
+  margin-bottom: 20rpx;
+}
+.nochecked{
+  margin-left: 75rpx;
+}
+.check text{
+  margin-top: 10rpx;
+}
+.write{
+display: flex;
+flex-direction: column;
+font-size: 28rpx;
+padding: 30rpx;
+
+}
+/* 内容区 */
+.content1{
+display: flex;
+justify-content: space-between;
+background-color: rgba(255, 255, 255, 1);
+height: 80rpx;
+margin-bottom: 6rpx;
+align-items: center;
+
+}
+.content2{
+display: flex;
+justify-content: space-between;
+background-color: rgba(255, 255, 255, 1);
+height: 80rpx;
+margin-top: 20rpx;
+align-items: center;
+}
+.content3{
+display: flex;
+justify-content: space-between;
+background-color: rgba(255, 255, 255, 1);
+height: 80rpx;
+align-items: center;
+margin-top: 6rpx;
+}
+.content4{
+display: flex;
+justify-content: space-between;
+background-color: rgba(255, 255, 255, 1);
+height: 80rpx;
+align-items: center;
+margin-top: 6rpx;
+}
+.navcontent{
+  display: flex;
+  align-items: center;
+}
+/* 底部导航 */
+.buttomContainer{
+  display: flex;
+  height: 110rpx;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 300rpx;
+  align-items: center;
+  border: 2rpx solid rgba(255, 0, 0, 0);
+}
+.buttomItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+.wode{
+  color: rgba(129, 28, 29, 1);
+}
+.buttomItem text{
+  font-size: 28rpx;
+}

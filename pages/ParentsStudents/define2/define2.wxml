@@ -1,0 +1,57 @@
+<!--pages/define2/define2.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Continer">
+
+  <!--上半区导航页面-->
+  <view class="gander">
+    <view class="gender">
+      <text class="semester">2021学年第二学期</text>
+    </view>
+    <view class="changes">
+      <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+      <text class="change">形式切换</text>
+    </view>
+  </view>
+  <!--下半区展示区域页面-->
+  <scroll-view class="recommendScroll" enable-flex >
+    <view class="scrollItem">
+      <image src="{{config.host}}/profile/static/images/1.png"></image>
+    </view>
+  </scroll-view>
+  <button class="search" bindtap="clickme">分享</button> 
+
+
+
+<!--分享 -->
+  </view>
+<!--底部下拉弹框 -->
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <!--自定义弹窗内容 start-->
+  <!-- 两个图标和按钮包裹器 start -->
+  <view class="iconContainer">
+    <!-- 图标一 start-->
+    <view class="icons">
+        <icon  class="iconfont icon-weixin"></icon>
+        <text>分享给好友</text>
+    <!-- 图标一 end -->
+    </view>
+    <!-- 图标二 start-->
+    <view class="icons">
+        <icon class="iconfont icon-pengyouquan"></icon>
+        <text>分享朋友圈</text>
+    <!-- 图标二 end -->
+    </view>
+    <!-- 按钮包裹器 start -->
+    <view class="btnContainer" 	>
+        <button class="btn1" bindtap="noshowModalTwo">取消</button>
+    <!-- 按钮包裹器 end' -->
+    </view>
+    <!-- 两个图标和按钮包裹器 end -->
+    <!--自定义弹窗内容 end-->
+  </view>
+
+
+</view>

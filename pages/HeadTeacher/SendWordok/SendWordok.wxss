@@ -1,0 +1,66 @@
+/* pages/HeadTeacher/SendWordok/SendWordok.wxss */
+page{
+  background-color: #f7f8fa;
+}
+/* 头部背景 */
+.header{
+  background-color: #ffffff;
+  height: 200rpx;
+  border-top: 3rpx solid #f7f8fa;
+}
+.header1{
+  display: flex;
+  border: 2rpx solid #7c0000;
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 50%;
+  margin-left: 40rpx;
+}
+.name{
+  display: flex;
+  padding-left: 250rpx;
+  margin-top: -160rpx;
+  font-size: 35rpx;
+}
+.icon-right-arrow{
+  display: flex;
+  padding-left: 680rpx;
+  padding-top: -20rpx;
+}
+
+.img1{
+  height: 60rpx;
+  width: 140rpx;
+  display: flex;
+  margin-left: 240rpx;
+  margin-top: -20rpx;
+}
+
+/* 寄语框 */
+.send{
+  margin-left: 50rpx;
+  height: 400rpx;
+  width: 650rpx;
+  margin-top: 50rpx;
+  border: 5rpx solid #999999;
+  border-radius :20rpx;
+  background-color: #ffffff;
+
+} 
+
+
+/* 编辑 */
+.icon-xiugai{
+  color: #7c0000;
+  font-size: 45rpx;
+  display: flex;
+  margin-bottom: 40rpx;
+  padding-left: 580rpx;
+}
+.icontext{
+  margin-top: 250rpx;
+}
+.comments{
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+}

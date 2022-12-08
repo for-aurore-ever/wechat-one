@@ -1,0 +1,40 @@
+/* pages/id/id.wxss */
+page{
+  background-color: #f7f8fa;
+}
+/*信息条*/
+.message{
+  background-color:#fff;
+  display:flex;
+  justify-content:space-between;
+  height:90rpx;
+  margin-top:4rpx;
+}
+/*左边的文字*/
+.textLeft{
+  margin-left:38rpx;
+  line-height:90rpx;
+  font-size:32rpx;
+}
+/*右边的文字*/
+.textRight{
+  margin-right:32rpx;
+  font-size:28rpx;
+  color:#999999;
+  line-height:90rpx;
+}
+/*提示语句*/
+.tip{
+  margin-left:40rpx;
+  font-size:24rpx;
+  color:#999999;
+}
+/*确定按钮*/
+.btn{
+  height:80rpx;
+  background-color: #7C0000;
+  color:#fff;
+  font-size:32rpx;
+  border-radius: 50rpx;
+  margin-top:90rpx;
+}

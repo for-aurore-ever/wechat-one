@@ -1,0 +1,56 @@
+
+<import src="../../tabbar/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+<view>
+  <view class="banji2" >
+  <text class="banji{{currentIndex==index?11:22}}" wx:for="{{gradeIdList}}" bindtap="changegrade" data-index="{{index}}" data-grade="{{item}}">{{item}}</text>
+</view>
+  <!-- 环图 -->
+  <view class="ring">
+    
+    <view class="text">
+      <text class="symbol">︱</text>
+      <text class="left">成长报告完成情况分布</text>
+      <text class="right" bindtap="grow">查看更多</text>
+    </view>
+
+    <view class="Information">
+      <ec-canvas class="ringCharts" id="ringchart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+
+      <view class="stateCharts">
+        <text class="state">状态</text>
+        
+        <view class="name" wx:for="{{Data}}">
+          <text style="background-color: {{item.color}};" class="round"></text>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+      <view class="stateCharts">
+        <text class="state">人数</text>
+        <text class="name" wx:for="{{Data}}">{{item.value}}人</text>
+      </view>
+      <view class="stateCharts">
+        <text class="state" bindtap="ceshi">占比</text>
+        <text class="name" wx:for="{{Data}}">{{item.Percentage}}%</text>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 柱状图 -->
+  <view class="column">
+    <view class="text">
+      <text class="symbol">︱</text>
+      <text class="left">各模块完成情况分布</text>
+      <text class="right" bindtap="details">查看更多</text>
+    </view>
+
+    <view class="container" over-flow: scroll>
+      <ec-canvas  id="onechart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+
+      <ec-canvas  id="twochart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+    </view>
+
+
+  </view>
+</view>

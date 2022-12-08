@@ -1,0 +1,10 @@
+<!--pages/await/await.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/36.png"></image>
+</view>
+<view class="title">
+<text>注：您已完成邀请，请耐心等待老师填写寄语。</text>
+</view>
+</view>

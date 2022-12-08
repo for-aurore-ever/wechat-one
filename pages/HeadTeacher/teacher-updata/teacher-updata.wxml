@@ -1,0 +1,73 @@
+<!--pages/ceshi/ceshi.wxml-->
+<view>
+<!--教师盒子(大) start  -->
+  <view class="teacherContainer"  wx:for="{{SubjectTeacherList}}">
+    <!-- 教师盒子1(小) start -->
+    <view class="teacherOne"  >
+      <view>
+        <text class="leftText text" >{{item.subjectName}}</text>
+      </view>
+      <view >
+        <text class="rightText text" >{{item.nickName}}</text>
+        <icon class="rightText iconfont .icon-jiantou"  bindtap="clickme" data-item="{{item}}"></icon>
+      </view>
+    <!-- 教师盒子1(小) end -->
+    </view>
+  <!--教师盒子(大) end  -->
+  </view>
+  <!-- 按钮盒子 start -->
+  <view class="btnContainer">
+    <!--按钮1 start  -->
+    <!-- <button class="confirm-btn1" bindtap="submit">新增老师</button> -->
+    <!-- 按钮2 start -->
+    <!-- <button class="confirm-btn2">保存</button> -->
+  <!-- 按钮盒子 end -->
+  </view>
+  <!-- 点击出现蒙层  -->
+  <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"  > </view>
+  <!-- 弹窗内容 start -->
+  <view class="modalDlg" wx:if="{{showModal}}">
+          <!--弹窗内容头部 start  -->
+          <view class="tip_title" style='padding-top:20rpx'>
+            <text class="text">新增老师\n</text>
+          <!--弹窗内容头部 end  -->  
+          </view>
+          <!-- 弹窗内容中间 start -->
+          <view class="tip_content" >
+            <input type="text" placeholder="请输入某某老师"/>
+          <!-- 弹窗内容中间 end -->
+          </view>
+          <!-- 弹窗内容按钮 start -->
+          <view class="btnContainer2">
+            <button class="confirm-btn3"  bindtap="noSubmit">确定</button>
+            <button class="confirm-btn4"  bindtap="noSubmit">取消</button>
+          <!-- 弹窗内容按钮 end -->
+          </view>
+   <!-- 弹窗内容 end-->
+  </view>
+
+
+
+  <!-- 底部下拉弹框 start-->
+  <!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <!--自定义下拉弹窗内容 start-->
+    <view class="selectTop">
+      <text class="topLeft" bindtap="noshowModalTwo">取消</text>
+      <text class="topCenter">选择任课老师</text>
+      <text class="topRight" bindtap="noshowModalTwo">确定</text>
+    </view>
+    <!--自定义下拉弹窗内容 end-->
+    <!-- 下拉弹框的滚轮内容 start -->
+    <scroll-view 	scroll-y="true">
+    <view wx:for="{{getSubjectTeacherlLst}}">
+      <view bindtap="getSubjectT"  data-item="{{item}}">
+        <text>{{item.nickName}}</text>
+      </view>
+    </view>
+    </scroll-view>
+    <!-- 下拉弹框的滚轮内容 end -->
+    <!--底部下拉弹框 end  -->
+  </view>
+</view>

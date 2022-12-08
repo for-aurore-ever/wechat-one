@@ -1,0 +1,22 @@
+<!--pages/HeadTeacher/SendWordok/SendWordok.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="header">
+      <text class="header1"></text>
+      <image class="header1" wx:if="{{avatar=='' && sex==0}}" src="../../../static/images/boy.png" ></image>
+      <image class="header1" wx:if="{{avatar=='' && sex==1}}" src="../../../static/images/girl.png" ></image>
+      <image class="header1" wx:if="{{avatar!==''}}" src="{{config.host+'/getFile?name='+avatar}}" ></image>
+      <text class="name">{{stuName}}</text>
+        <text class=" iconfont icon-right-arrow" bindtap="goBasicInformation"></text>
+        <image  class="img1" src="{{sex==0?config.host+'/profile/static/images/nanhai1.png':'../../../static/images/nvsheng.png'}}" ></image>
+       
+</view>
+<view class="send">
+    <view class="comments">
+      <text >{{comments}}</text>
+    </view>
+    <view class="icontext">
+      <text class=" iconfont icon-xiugai" bindtap="goSendWork"></text>
+    </view>
+    
+</view>
+

@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view>
+<button catchtap="my" class="btn">我的</button>
+<button catchtap="myInfo" class="btn">我的信息</button>
+<button catchtap="myChild" class="btn">我的孩子</button>
+<button catchtap="id" class="btn">身份匹配</button>
+<button catchtap="check" class="btn">核实信息</button>
+<button catchtap="addPass" class="btn">添加孩子-审核中</button>
+<button catchtap="addNoPass" class="btn">添加孩子-审核未通过</button>
+<button catchtap="childInfo" class="btn">孩子信息</button>
+<button catchtap="report1" class="btn">成长报告-模式一</button>
+<button catchtap="report2" class="btn">成长报告-模式二</button>
+<button catchtap="make1" class="btn">形式一-制作中</button>
+<button catchtap="make2" class="btn">形式二-制作中</button>
+<button catchtap="define1" class="btn">形式一-已定稿</button>
+<button catchtap="define2" class="btn">形式二-已定稿</button>
+<button catchtap="music" class="btn">添加音乐</button>
+<button catchtap="share" class="btn">分享</button>
+<button catchtap="isMe1" class="btn">形式一-这就是我</button>
+<button catchtap="isMe2" class="btn">形式二-这就是我</button>
+<button catchtap="book" class="btn">book</button>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/HeadTeacher/Studentshonor/Studentshonor.wxml-->
+<view class="Countainer">
+  <view class="box1" bindtap="changeHonor" data-honorModule="honor1">
+  <text class="type1">卓越少年</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+  <view class="box2"  bindtap="changeHonor" data-honorModule="honor2">
+  <text class="type2">励志少年</text>
+  <text class="iconfont icon-guanbi"style="color:#acacac"></text>
+  </view>
+  <view class="box3"  bindtap="changeHonor" data-honorModule="honor3">
+  <text class="type3">模范学生</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+   <view class="box4"  bindtap="changeHonor" data-honorModule="honor4">
+  <text class="type4">梦想领袖</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+  <view class="box5"  bindtap="changeHonor" data-honorModule="honor5">
+  <text class="type5">文明学生</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+  <button class="confirm-btn" bindtap="Honor">确认提交荣誉</button>
+</view>

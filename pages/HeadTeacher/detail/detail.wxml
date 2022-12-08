@@ -1,0 +1,52 @@
+<!--pages/HeadTeacher/detail/detail.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view>
+
+<view class="student1">
+<image src="{{config.host}}/profile/static/images/tx.jpg" class="img1"></image>
+<view class="stuInfo">
+<view class="info">
+<text class="name1">王朔示</text>
+<text class="check">待审核</text>
+</view>
+<image class="sex" src="{{config.host}}/profile/static/images/nan.png"></image> 
+</view>
+</view>
+
+<view class="stuInfo1">
+<text class="info1">学生基本信息</text>
+</view>
+<view class="stuInfo2">
+<text class="info2">班级</text>
+<text class="info3">一年级</text>
+</view>
+ <view class="stuInfo2">
+<text class="info2">年纪</text>
+<text class="info3">2班</text>
+</view>
+ <view class="stuInfo2">
+<text class="info2">身份证</text>
+<text class="info3">330624201809012523</text>
+</view>
+
+ <view class="stuInfo1">
+<text class="info1">家长基本信息</text>
+</view>
+<view class="stuInfo2">
+<text class="info2">家长姓名</text>
+<text class="info3">王义</text>
+</view>
+ <view class="stuInfo2">
+<text class="info2">手机号</text>
+<text class="info3">15987890989</text>
+</view>
+ <view class="stuInfo2">
+<text class="info2">家长身份</text>
+<text class="info3">爸爸</text>
+</view>
+<view class="btn">
+<button class="past">通过</button>
+<button class="return">退回</button>
+</view>
+</view>
+

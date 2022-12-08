@@ -1,0 +1,14 @@
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Countainer">
+    <view class="study" wx:for="{{gradeGallery}}" bindtap="getImgName" data-item="{{item}}">
+      <image src="{{config.host+'/getFile?name='+item}}" bindtap="goStupic" data-item="{{item}}"></image>
+      <view class="research">
+          <view class="contentname">
+          <text bindtap="goStupic">选择图片{{index+1}}</text>
+          </view>
+          <view class="contenttime">
+          </view>
+      </view>
+    </view>
+</view>
+

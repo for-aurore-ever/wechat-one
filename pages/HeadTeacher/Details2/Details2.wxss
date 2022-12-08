@@ -1,0 +1,98 @@
+/* pages/HeadTeacher/Details2/Details2.wxss */
+page {
+  
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.column {
+  border-top: 4rpx solid #f7f8fa;
+  display: flex;
+  flex-direction: row;
+}
+
+/* 左侧导航 */
+.left {
+  height: 100% ;
+  width: 200rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 0 20rpx 0;
+  background-color: rgb(247, 248, 250);
+}
+
+.left .name-list {
+  display: flex;
+  width: 200rpx;
+  font-size: 24rpx;
+  padding: 12rpx 0 12rpx 10rpx;
+}
+
+.left .name-list .name{
+  display: flex;
+  font-size: 24rpx;
+  color: rgb(102, 102, 102);
+
+  padding: 12rpx 28rpx 12rpx 18rpx;
+}
+
+.left .name-listShow {
+  display: flex;
+  font-size: 24rpx;
+  padding: 12rpx 0 12rpx 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.left .name-listShow .name{
+  display: flex;
+  font-size: 24rpx;
+  padding: 12rpx 28rpx 12rpx 20rpx;
+  color: rgb(16, 16, 16);
+  border-left: 8rpx solid #871616;
+  background-color: rgb(255, 255, 255);
+}
+
+/* 右侧信息 */
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 550rpx;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80rpx;
+}
+/* 小标题 */
+
+
+.right .one {
+  font-size: 16px;
+  color: rgb(16, 16, 16);
+  margin: 20rpx;
+  padding: 18rpx 10rpx 0 24rpx;
+}
+
+.one .one-right {
+  float: right;
+  color: rgb(135, 22, 22);
+}
+
+/* 学生名单 */
+.nameChart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 110rpx 0 0;
+}
+
+.nameChart .name {
+  
+  /* width: 84rpx; */
+  height: 42rpx;
+  margin: 32rpx 18rpx 0 44rpx;
+  font-size: 14px;
+  color: rgba(102, 102, 102, 1);
+}

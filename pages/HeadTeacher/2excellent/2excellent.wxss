@@ -1,0 +1,39 @@
+/* pages/HeadTeacher/2excellent/2excellent.wxss */
+/* 卓越少年名单区 */
+.Container .list {
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+  font-family: PingFangSC-regular;
+  margin-left: 40rpx;
+  margin-top: 32rpx;
+  margin-bottom: 30rpx;
+  width: 100%
+}
+.nameContainer{
+ width: 100%;
+  display: flex;
+  /* 换行 */
+  flex-wrap: wrap;
+  margin-left:40rpx ;
+ }
+.namelist{
+ display: flex;
+ width:20% ;
+ font-size: 26rpx;
+ font-family: PingFangSC-regular;
+ color: rgba(102, 102, 102, 1);
+ margin-bottom: 20rpx;
+ }
+ /*按钮区  */
+ .btn{
+   background-color: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(124, 0, 0, 1);
+   border-radius: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size: 32rpx;
+   font-family: PingFangSC-regular;
+   margin-top: 70rpx;
+   color: rgba(124, 0, 0, 1);
+   width:75% !important;
+} 

@@ -1,0 +1,85 @@
+/* pages/music/music.wxss */
+page{
+  background-color:#f7f8fa;
+}
+.music{
+  display: flex;
+  flex-direction: column;
+}
+/*头部导航区*/
+.header{
+  display: flex;
+  height: 80rpx;
+  width: 100%;
+  background-color:#fff;
+}
+/*推荐音乐按钮*/
+.btn1{
+  justify-content: center;
+  text-align: center;
+  font-size:32rpx;
+  font-weight:500;
+  line-height:80rpx;
+  background-color: #fff;
+  border-bottom:8rpx solid #7C0000;
+  padding:8rpx 0;
+}
+/*本地音乐按钮*/
+.btn2{
+  justify-content: center;
+  text-align: center;
+  font-size:32rpx;
+  font-weight:500;
+  line-height:80rpx;
+  background-color: #fff;
+  padding:8rpx 0;
+}
+/*音乐信息条*/
+.music1{
+  display: flex;
+  background-color:#fff;
+  height:180rpx;
+  width: 710rpx;
+  margin: 20rpx 20rpx 0rpx 20rpx;
+}
+/*歌曲照片*/
+.img{
+  height:132rpx;
+  width: 132rpx;
+  margin:24rpx 0 24rpx 20rpx;
+  border-radius: 50%;
+}
+/*文字信息*/
+.message{
+  width: 288rpx;
+  margin-left:24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.message1{
+  margin-top:38rpx;
+  font-size:32rpx;
+}
+.message2{
+  font-size:24rpx;
+  color:#999999;
+  margin-top:8rpx;
+}
+.message3{
+  font-size:24rpx;
+  color:#999999;
+  margin-top:8rpx;
+}
+/*使用按钮*/
+.btn{
+  margin-top:24rpx;
+  margin-right: 24rpx;
+  padding:14rpx 0;
+  line-height: 24rpx;
+  background-color: #7C0000;
+  color:#fff;
+  font-weight: 500rpx;
+  font-size:24rpx;
+  height: 52rpx;
+  border-radius: 50rpx;
+}

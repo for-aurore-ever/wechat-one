@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="message">
+      <text class="text" >个人图库</text>
+      <text class="iconfont icon-jinru icon1" style="color:#999999" bindtap="gomeeting"></text>
+    </view>
+    <!-- <view class="message">
+      <text class="text">班级图库</text>
+      <text class="iconfont icon-jinru icon1" style="color:#999999" bindtap="gotuStu"></text>
+    </view> -->
+</view>

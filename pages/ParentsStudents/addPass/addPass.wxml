@@ -1,0 +1,7 @@
+<!--pages/addPass/addPass.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="addPass">
+<image src="{{config.host}}/profile/static/images/waiting1.png" class="img"></image>
+<text class="word1">班主任审核中</text>
+<text class="word2">请耐心等待班主任审核，核实完成即可开启孩子的成长报告的填写呦！</text>
+</view>

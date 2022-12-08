@@ -1,0 +1,62 @@
+/* pages/HeadTeacher/cpass/cpass.wxss */
+page{
+  background-color:#f7f8fa
+  }
+  .cpass{
+  margin-top:20rpx
+  }
+  /*信息条*/
+  .cpass .test{
+  background-color: #fff;
+  margin-bottom: 5rpx;
+  height:140rpx;
+  }
+  /*要输入的密码类型*/
+  .pass{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color:#999999;
+  padding:0 30rpx; 
+  }
+  /*提示语句*/
+  .Pass{
+  height:90rpx;
+  display:flex;
+  font-size:30rpx;
+  color:#D3D3D3;
+  justify-content:space-between;
+  padding:10rpx 30rpx;
+  }
+  /*确认修改按钮*/
+  .btn {
+  margin-top:100rpx;
+  background-color:#7c0000;
+  color:white;
+  font-size:30rpx;
+  text-align: center; /*让文字居中*/
+  line-height: 40rpx; /*设置行高*/
+  border-radius: 50rpx;
+  }
+  .parentstyle {
+    display: flex;
+    align-items: center;
+    border: 1rpx solid #e0e0e0;
+    border-radius: 10rpx;
+    box-shadow: 0 0 5rpx #e0e0e0;
+    margin: 30rpx 38px;
+    padding: 20rpx;
+  }
+  
+  .parentstyle .imageStyle {
+    width: 41rpx;
+    height: 41rpx;
+    margin-right: 20rpx;
+  }
+  .parentstyle .centerStyle {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28rpx;
+  }

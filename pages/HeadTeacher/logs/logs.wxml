@@ -1,0 +1,22 @@
+<!--pages/FacultyTeacher/logs/logs.wxml-->
+<!--基本信息页面-->
+<view class="continer">
+  <view class="gander">
+  <text>年级</text><text class="nianji">一年级</text>
+  </view>
+  <view class="gander">
+  <text>班级</text><text class="nianji">2班</text>
+  </view>
+  <view class="gander">
+  <text>身份证</text><text class="nianji">3306**********2523</text>
+  </view>
+  <view class="parents">
+  <text>家长姓名</text><text class="parentName">王义</text>
+  </view>
+  <view class="gander">
+  <text>手机号</text><text class="nianji">15********7</text>
+  </view>
+  <view class="gander">
+  <text>家长身份</text><text class="nianji">爸爸</text>
+  </view>
+</view>

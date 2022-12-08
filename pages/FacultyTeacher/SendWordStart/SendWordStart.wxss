@@ -1,0 +1,105 @@
+/* SendWordStart/SendWordStart.wxss */
+/* pages/class/class.wxss */
+.continer{
+  background-color: #fffffe;
+  margin-top: 24rpx;
+  width: 100%;
+  height: 60rpx;
+}
+
+.CONTINER{
+  height: 100%;
+  background-color: #f7f8fa;
+
+}
+
+.top1{
+  margin-left:140rpx ;
+  margin-top: 24rpx;
+  margin-right:100rpx ;
+  /* margin-left: 176rpx; */
+  border-bottom: 4rpx solid #7c0000;
+}
+
+.top2{
+  margin-left:140rpx ;
+  margin-right:100rpx ;
+  /* margin-left: 206rpx; */
+}
+
+.banji{
+  margin-top: 5rpx;
+  width: 160rpx;
+  margin-left: 40rpx;
+  border-left:4rpx solid #7c0000;
+  height: 100%;
+}
+.banji1{
+  margin-left: 118rpx;
+}
+.banji2{
+  background-color: #fffffe;
+  margin-top: 10rpx;
+}
+.banji3{
+  background-color: #fffffe;
+  /* display: flex; */
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  /* margin-left: 40rpx; */
+  flex-wrap: wrap;
+  /* justify-content: space-between */
+}
+.banjiContainer{
+  margin-top: 10rpx;
+}
+.studentContainer{
+  /* margin-top: 40rpx; */
+  background-color: #fffffe;
+  display: flex;
+  justify-content: space-between;
+}
+.studentContainer2{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+.banji3 .student .gender{
+  height: 60rpx;
+  width: 130rpx;
+  margin-top: 14rpx;
+  margin-left: 14rpx;
+}
+.banji3 .student{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 40rpx;
+  /* margin-right: 35rpx; */
+  display: flex;
+  justify-content:space-between;
+  width: 308rpx;
+  height: 152rpx;
+  border:4rpx solid #f2f2f2;
+}
+.banji3 .student .student2{
+  display: flex;
+  flex-direction: column;
+  width: 308rpx;
+  height: 152rpx;
+}
+.banji3 .student .name{
+  margin-top: 20rpx;
+  margin-left: 14rpx;
+  font-size: 33rpx;
+}
+.banji3 .student .touxiang{
+  border-radius: 50%;
+  width: 240rpx;
+  height: 120rpx;
+  margin-top: 16rpx;
+  margin-right: 20rpx;
+}
+.banji4{
+  background-color: #fffffe;
+  margin-top: 50rpx;
+}

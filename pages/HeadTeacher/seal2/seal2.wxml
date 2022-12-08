@@ -1,0 +1,8 @@
+<!--pages/FacultyTeacher/seal2/seal2.wxml-->
+<view class="header">
+  <image src="{{getfile}}" class="camera" bindtap="picseal">
+    
+ </image>  
+</view>
+<text class="careful">注：调整后的印章仅会在当前及之后的成长报告中展示，不会影响已定稿的成长报告。</text>
+<button class="confirm-btn" bindtap="took">调整</button>

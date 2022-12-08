@@ -1,0 +1,324 @@
+<!--pages/report2/report2.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="continer">
+  <view class="Continer">
+    <view class="header">
+      <view class="nameContainer" wx:for="{{childMessage}}" data-item="{{item}}" data-index="{{index}}" bindtap="cChildMessage">
+        <text class="name{{currentIndex==index?1:2}}">{{item.stuName}}</text>
+        <!-- <text class="name2">{{item.stuName}}</text> -->
+      </view>
+    </view>
+  <view class="changes">
+    <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+    <text class="change" bindtap="goReport1" >模式切换</text>
+  </view>
+  </view>
+  <view class="body">
+      <view class="nav">
+          <button class="btn{{currentIndex1==0?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="0">这就是我</button>
+          <button class="btn{{currentIndex1==1?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="1">我和我的伙伴</button>
+          <button class="btn{{currentIndex1==2?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="2">我写的字</button>
+          <button class="btn{{currentIndex1==3?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="3">我的作业</button>
+          <button class="btn{{currentIndex1==4?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="4">我的作文</button>
+          <button class="btn{{currentIndex1==5?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="5">我的试卷</button>
+          <button class="btn{{currentIndex1==6?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="6">参加的活动</button>
+          <button class="btn{{currentIndex1==7?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="7">报告单</button>
+          <button class="btn{{currentIndex1==8?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="8">老师寄语</button>
+          <button class="btn{{currentIndex1==9?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="9">小伙伴的话</button>
+          <button class="btn{{currentIndex1==10?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="10">我的荣誉</button>
+          <button class="btn{{currentIndex1==11?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="11">学期小结</button>
+          <button class="btn{{currentIndex1==12?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="12">十佳成长目录</button>
+          <button class="btn{{currentIndex1==13?1:2}}" style="width:200rpx" bindtap="goSmall" data-index="13">个性</button>
+      </view>
+  <view class="report2">
+  <view class="box">
+    <view class="one">
+    <view class="onedotNoActive"></view>
+    <view class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+    <view class="onemaintitle">这就是我</view>
+    </view>
+    <view class="onemaincon">
+    <view class="photo1" bindtap="goIsme1" data-itemKey="{{'这就是我'}}">
+    <image class="img" src="{{config.host}}/profile/static/images/016.png"></image>
+    <text class="word1">这就是我</text>
+    <text class="word3">THIS IS ME</text>
+    </view>
+    </view>
+    </view>
+  </view>
+    <view class="one">
+    <view class="onedotNoActive"></view>
+    <view class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+    <view class="onemaintitle">我和我的伙伴</view>
+    </view>
+    <view class="onemaincon">
+    <view class="photo1" bindtap="goFriend" data-itemKey="{{'我和我的伙伴'}}">
+    <image class="img" src="{{config.host}}/profile/static/images/019.png"></image>
+    <text class="word1">我和我的伙伴</text>
+    <text class="word3">MY PARTNER AND I</text>
+    </view>
+    </view>
+    </view>
+  </view>
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我写的字</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goWord" data-itemKey="{{'我写的字'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/23.png"></image>
+      <text class="word1">我写的字</text>
+      <text class="word2">THE WORDS I WRITE</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我的作业</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goWork" data-itemKey="{{'我的作业'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/25.png"></image>
+      <text class="word1">我的作业</text>
+      <text class="word2">MYHOMEWORK</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+ 
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我的作文</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goThing" data-itemKey="{{'我的作文'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/034.png"></image>
+      <text class="word1">我的作文</text>
+      <text class="word2">MY COMPOSITION</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我的试卷</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goPeper" data-itemKey="{{'我的试卷'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/036.png"></image>
+      <text class="word1">我的试卷</text>
+      <text class="word2">MY PAPER</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我参加的活动</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goActive" data-itemKey="{{'参与的活动'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/042.png"></image>
+      <text class="word1">我参加的活动</text>
+      <text class="word2">ACTMTIES I PARTICIPATED</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+    
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">学业素养报告单</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goSuzhiReport" data-itemKey="{{'学业素养报告单'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/46.png"></image>
+      <text class="word1">学业素养报告单</text>
+      <text class="word2">SCHOOL REPORT</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+  
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">老师寄语</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1"  bindtap="goTeacherWord" data-itemKey="{{'老师寄语'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/048.png"></image>
+      <text class="word1">老师寄语</text>
+      <text class="word2">TEACHER'S MESSAGE</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">小伙伴的话</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goFriendWord" data-itemKey="{{'小朋友的话'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/019.png"></image>
+      <text class="word1">小伙伴的话</text>
+      <text class="word2">FROM A FPIEND</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我的荣誉</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goHonor" data-itemKey="{{'我的荣誉'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/53.png"></image>
+      <text class="word1">我的荣誉</text>
+      <text class="word2">MY HONER</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我的学期小结</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goXiaoJie" data-itemKey="{{'学期小结'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/55.png"></image>
+      <text class="word1">我的学期小结</text>
+      <text class="word2">MY TERM SUMMARY</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">我的十能成长目录</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1" bindtap="goGrow" data-itemKey="{{'十能成长目录'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/64.png"></image>
+      <text class="word1">我的十能成长目录</text>
+      <text class="word2">MY LIST OF TEN TALENTS</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+   
+
+  <view   class="one">
+    <view class="onedotNoActive"></view>
+    <view  class="oneline"></view>
+    <view class="onemain">
+    <view class="word">
+      <view class="onemaintitle">个性</view>
+      </view>
+      <view class="onemaincon">
+      <navigator>
+      <view class="photo1"  bindtap="goPerson" data-itemKey="{{'个性'}}">
+      <image class="img2" src="{{config.host}}/profile/static/images/65.png"></image>
+      <text class="word1">个性</text>
+      <text class="word2">PERSONALITY</text>
+      </view>
+      </navigator>
+      </view>
+    </view>
+  </view>
+
+
+
+
+</view>
+  </view>
+  </view>
+</view>
+    
+
+

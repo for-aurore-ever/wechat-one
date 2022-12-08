@@ -1,0 +1,59 @@
+<!--pages/studentattainment/studentattainment.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/34.png"></image>
+</view>
+<view class="photo">
+<image class="award1" src="{{config.host}}/profile/static/images/42.png"></image>
+<view class="nameclass">
+<text>三年级(2)班</text>
+<text>张大大</text>
+</view>
+<view class="heightweight">
+<text class="height">150cm</text>
+<text class="weight">40kg</text>
+<view class="eye">
+<text>5.0</text>
+<text>5.0</text>
+</view>
+</view>
+<view class="score">
+<text>98</text>
+<text>100</text>
+<text>100</text>
+<text>99</text>
+</view>
+<view class="sum">
+<text>优秀</text>
+<text>优秀</text>
+<text>优秀</text>
+<text>优秀</text>
+</view>
+<view class="subject">
+<view class="subject1">
+<text>优秀</text>
+<text>优秀</text>
+</view>
+<view class="subject1">
+<text>良好</text>
+<text>良好</text>
+</view>
+<view class="subject1">
+<text>优秀</text>
+<text>优秀</text>
+</view>
+</view>
+<view class="schoolshow">
+<view class="subject1">
+<text>AAA</text>
+<text>AAA</text>
+</view>
+<view class="subject1">
+<text>AAA</text>
+<text>AAA</text>
+</view>
+</view>
+</view>
+</view>
+

@@ -1,0 +1,53 @@
+<!--pages/FacultyTeacher/seal/seal.wxml-->
+<!--印章页面-->
+<view class="seal">
+  <view class="personalSeal">
+  <text>个人印章</text>
+  <view class="right" bindtap="toseal1">
+  <text class="upload">请上传</text>
+  <text class="iconfont icon-jinrujiantou icon" style="color:#707070"></text>
+  </view>
+  </view>
+  <view class="personalSeal">
+  <text>成长报告专用章</text>
+  <text class="iconfont icon-jinrujiantou icon" style="color:#707070" bindtap="goGrowth"></text>
+  </view>
+  <view class="personalSeal">
+  <text>卓越少年</text>
+  <text class="iconfont icon-jinrujiantou icon" style="color:#707070" bindtap="goHonor1"> </text>
+  </view>
+  <view class="personalSeal">
+  <text>励志少年</text>
+  <text class="iconfont icon-jinrujiantou icon" style="color:#707070" bindtap="goHonor2"></text>
+  </view>
+  <view class="personalSeal">
+  <text>模范学生</text>
+  <text class="iconfont icon-jinrujiantou icon" style="color:#707070" bindtap="goHonor3"></text>
+  </view>
+  <view class="personalSeal">
+  <text>梦想领袖</text>
+  <text class="iconfont icon-jinrujiantou icon" style="color:#707070" bindtap="goHonor4"></text>
+  </view>
+  <view class="personalSeal">
+  <text>文明学生</text>
+  <text class="iconfont icon-jinrujiantou icon" style="color:#707070" bindtap="goHonor5"></text>
+  </view>
+  <view class="btn">
+  <button class="newAdd" bindtap="submit">新增印章</button>
+  <button class="define">确定</button>
+  </view>
+</view>
+
+<!-- 弹框 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="theme">
+  <text>新增印章</text>
+  </view>
+  <input placeholder="请输入印章名" placeholder-class="place"></input>
+  <view class="confirm">
+  <button class="yes" bindtap="go">确定</button>
+  <button class="no" bindtap="go">取消</button>
+  </view>
+</view>
+

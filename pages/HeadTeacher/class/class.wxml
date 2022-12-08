@@ -1,0 +1,33 @@
+<!--pages/HeadTeacher/class/class.wxml-->
+<!--上方导航搜索栏-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<import src="../../tabbar/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+<view class="continer">
+<input class="search iconfont icon-sousuo" placeholder="学生"></input>
+<button class="btn">搜索</button>
+</view>
+<!--班级栏-->
+
+<view class="banji2" >
+  <!-- 绑定点击事件，完成班级列表的切换 -->
+  <!-- 传入一个参数item，将获取当前点击的班级tab的标识 -->
+  <text class="banji{{currentIndex==index?1:2}}" wx:for="{{gradeId}}" bindtap="changegrade" data-grade="{{item}}" data-index="{{index}}">{{item}}</text>
+</view>
+<!--班级成员信息-->
+<scroll-view class="recommendScroll" enable-flex >
+  <view class="banji3">
+    <view class="student"  bindtap="goStudent" data-item="{{item}}" wx:for="{{stu1}}">
+      <view class="student2" >
+      <text class="name" >{{item.stuName}}</text>
+      <image class="gender" src="{{item.sex==0?config.host+'/profile/static/images/nanhai1.png':'../../../static/images/nvsheng.png'}}"></image>
+      </view>
+      <image class="touxiang" wx:if="{{item.avatar=='' && item.sex==0}}" src="../../../static/images/boy.png" ></image>
+      <image class="touxiang" wx:if="{{item.avatar=='' && item.sex==1}}" src="../../../static/images/girl.png" ></image>
+      <image class="touxiang" wx:if="{{item.avatar!==''}}" src="{{config.host+'/getFile?name='+item.avatar}}" ></image>
+    </view>
+  </view>
+</scroll-view>
+
+
+

@@ -1,0 +1,27 @@
+/* custom-tab-bar/index.wxss
+.container{
+  height: 120rpx;
+  background:white;
+  display: flex;
+  border-top: 2rpx solid #e8e8e8;
+}
+.item{
+  flex:1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.icon{
+  width:60rpx;
+  height: 60rpx;
+  margin:0 auto;
+}
+.textStyle{
+  color:#fff;
+}
+.text{
+  font-size: 28rpx;
+  font-weight: 700rpx;
+}
+ */

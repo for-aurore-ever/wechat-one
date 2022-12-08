@@ -1,0 +1,113 @@
+.Countainercontent{
+  /* 铺满整个页面 */
+  width:100%;
+  height: 100%;
+  position: absolute;
+  padding: 3rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 4rpx;
+}
+.container11{
+  margin: 0 auto;
+  margin-right:30rpx ;
+  margin-top: 50rpx;
+}
+.cimage{
+  /* margin: 0 auto; */
+  margin-left:200rpx ;
+  height: 300rpx;
+  width: 300rpx;
+  margin-top: 200rpx;
+}
+.ctext{
+  font-size: 30rpx;
+  color:  rgba(153, 153, 153, 1);
+  /* margin: 0 auto; */
+  margin-bottom: 350rpx;
+  margin-left:12rpx ;
+  /* margin-left: 350rpx; */
+}
+
+.containerImage image{
+  display: flex;
+    margin: 0 auto;
+    height: 1000rpx;
+    padding: 30rpx 30rpx;
+    position: relative;
+    width: 700rpx;
+    margin-bottom: 80rpx
+}
+.award10{
+  position: absolute;
+  height: 200rpx;
+  width: 450rpx;
+  z-index: 3;
+ left:0;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top: -970rpx;
+}
+.award11{
+  position: absolute;
+  height: 200rpx;
+  width: 450rpx;
+  z-index: 3;
+ left:0;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top: -740rpx;
+}
+.award12{
+  position: absolute;
+  height: 200rpx;
+  width: 450rpx;
+  z-index: 3;
+ left:0;right:0;
+ margin:auto;/*有了这个就自动居中了*/
+ margin-top: -510rpx;
+}
+
+.confirm-btn1{
+  margin-top: -80rpx;
+  width: 600rpx!important;
+  height: 90rpx; 
+  line-height: 80rpx; 
+  border-radius:50rpx; 
+  background: #7a0002;
+  color: #fff;
+  padding: 0;
+  /* margin-bottom: 80rpx; */
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.texec1{
+  z-index: 1000;
+  position: absolute;
+  left:120rpx;right:0;
+  top: 240rpx;
+  margin:auto;/*有了这个就自动居中了*/
+  height: 120rpx;
+  width: 240rpx;
+  background-color: #fff;
+}
+.texec2{
+  z-index: 1000;
+  position: absolute;
+  left:120rpx;right:0;
+  top: 470rpx;
+  margin:auto;/*有了这个就自动居中了*/
+  height: 120rpx;
+  width: 240rpx;
+  background-color: #fff;
+}
+.texec3{
+  z-index: 1000;
+  position: absolute;
+  left:120rpx;right:0;
+  top:700rpx;
+  margin:auto;/*有了这个就自动居中了*/
+  height: 120rpx;
+  width: 240rpx;
+  background-color: #fff;
+}

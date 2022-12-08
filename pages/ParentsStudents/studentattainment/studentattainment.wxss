@@ -1,0 +1,124 @@
+/* pages/studentattainment/studentattainment.wxss */
+page{
+  background-color: rgba(247, 248, 250, 1);
+  position: relative;
+}
+.Countainer{
+    height: 100%;
+    position: absolute;
+}
+.background image{
+  display: flex;
+  margin: 0 auto;
+  height: 1000rpx;
+  padding: 30rpx 30rpx;
+  position: relative;
+   z-index: 1;
+  width: 700rpx;
+  margin-bottom: 80rpx;
+}
+
+.award1{
+position: absolute;
+height: 840rpx;
+width: 600rpx;
+z-index: 2;
+left: 0;
+top: 0;
+right: 0;
+margin: auto;
+margin-top: 150rpx;
+
+}
+.nameclass{
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  margin-top: 270rpx;
+  top: 0;
+  margin-left: 130rpx;
+}
+.nameclass text{
+  margin-left: 33rpx;
+  font-size: 30rpx;
+}
+.heightweight{
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  margin-top: 302rpx;
+  top: 0;
+  margin-left: 130rpx;
+  justify-content: space-between;
+}
+.weight{
+  margin-left: 120rpx;
+  font-size: 30rpx;
+}
+.height{
+  font-size: 32rpx;
+  margin-left: 40rpx;
+}
+.eye{
+  display: flex;
+  margin-left: 130rpx;
+  flex-wrap: wrap;
+  height: 50rpx;
+  width: 50rpx;
+  font-size: 32rpx;
+}
+/* 成绩报告一 */
+.score{
+  display: flex;
+  z-index: 3;
+  padding: 150rpx;
+  position: absolute;
+  top: 0;
+  margin-top: 268rpx;
+  margin-left: 40rpx;
+}
+.score text{
+  margin-left: 60rpx;
+  font-size: 30rpx;
+}
+/* 成绩报告二 */
+.sum{
+display: flex;
+z-index: 3;
+padding: 150rpx;
+position: absolute;
+top: 0;
+margin-top: 298rpx;
+margin-left: 30rpx;
+height: 25rpx;
+width: 490rpx;
+}
+.sum text{
+   margin-left: 60rpx;
+   font-size: 30rpx;
+}
+.subject{
+  position: absolute;
+  top: 0;
+  padding: 200rpx;
+  z-index: 3;
+  margin-top: 398rpx;
+}
+.subject1{
+  display: flex;
+    justify-content: space-between;
+    width: 370rpx;
+    margin-left: 50rpx;
+}
+.subject1 text{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+/* 校园表现报告 */
+.schoolshow{
+  position: absolute;
+  top: 0;
+  padding: 200rpx;
+  z-index: 3;
+  margin-top: 608rpx;
+}

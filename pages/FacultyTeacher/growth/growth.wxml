@@ -1,0 +1,6 @@
+<!--pages/growth/growth.wxml-->
+<!--个人印章初始页面-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="header">
+  <image class="img" src="{{config.host}}/profile/static/images/growseal.png"></image>
+</view>

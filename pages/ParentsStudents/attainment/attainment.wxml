@@ -1,0 +1,71 @@
+<!--pages/attainment/attainment.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+
+
+
+<view class="Countainercontent" >
+  <view class="Countainer" wx:if="{{show}}">
+<view class="background">
+<image class="imge"  src="{{config.host}}/profile/static/images/achieve.png"></image>
+</view>
+<view class="photo5">
+<image class="award1" src="{{config.host}}/profile/static/images/achieve1.png"></image>
+<view class="nameclass">
+<text>{{suzhiReport['班级']}}</text>
+<text>{{suzhiReport['学生姓名']}}</text>
+</view>
+<view class="heightweight">
+<text class="height">{{suzhiReport['身高']}}</text>
+<text class="weight">{{suzhiReport['体重']}}</text>
+<view class="eye">
+<text>{{suzhiReport['左眼']}}</text>
+<text>{{suzhiReport['右眼']}}</text>
+</view>
+</view>
+<view class="score">
+<text>{{suzhiReport['成绩']['语文']}}</text>
+<text>{{suzhiReport['成绩']['数学']}}</text>
+<text>{{suzhiReport['成绩']['英语']}}</text>
+<text>{{suzhiReport['成绩']['科学']}}</text>
+</view>
+<view class="sum">
+<text>{{suzhiReport['综合评价等第']['语文']}}</text>
+<text>{{suzhiReport['综合评价等第']['数学']}}</text>
+<text>{{suzhiReport['综合评价等第']['英语']}}</text>
+<text>{{suzhiReport['综合评价等第']['科学']}}</text>
+</view>
+<view class="subject">
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['道德与法']}}</text>
+<text>{{suzhiReport['综合评价等第']['体育']}}</text>
+</view>
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['音乐']}}</text>
+<text>{{suzhiReport['综合评价等第']['信息']}}</text>
+</view>
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['美术']}}</text>
+<text>{{suzhiReport['综合评价等第']['综合实践']}}</text>
+</view>
+</view>
+<view class="schoolshow">
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['听课专注']}}</text>
+<text>{{suzhiReport['综合评价等第']['做事负责']}}</text>
+</view>
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['学习主动']}}</text>
+<text>{{suzhiReport['综合评价等第']['同学合作']}}</text>
+</view>
+</view>
+</view>
+</view>
+<view wx:else >
+<view  class="container11">
+  <image class="cimage" src="{{config.host}}/profile/static/images/41.png"></image>
+</view>
+  <text class="ctext">此页面您无需操作，请耐心等待班主任统一上传成绩单!</text>
+
+</view>
+
+</view>

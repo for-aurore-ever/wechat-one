@@ -1,0 +1,31 @@
+<!--pages/HeadTeacher/gallery/gallery.wxml-->
+<view class="Countainer">
+  <view class="run"wx:for="{{galleryNamer}}" data-grade="{{item}}">
+  <view class="sport" bindtap="tomeeting">
+  <view class="contentname">
+  <text>{{item}}</text>
+  </view>
+  <view class="contenttime">
+  </view>
+  </view>
+  <view class="more" catchtap="morefn">
+  <text class="iconfont icon-gengduo"></text>
+  </view>
+  </view>
+</view>
+  <view>
+    <button class='btn' style="width:75%" bindtap="submit" >+ 创建主题</button>
+  </view>
+<!-- 弹框 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="theme">
+  <text>主题名称</text>
+  </view>
+  <input model:value="{{galleryName}}" type="text"  placeholder="请输入主题名称"  placeholder-class="place" ></input>
+  <view class="confirm">
+  <button class="yes" bindtap="tophotos">确定</button>
+  <button class="no" bindtap="go">取消</button>
+  </view>
+</view>
+

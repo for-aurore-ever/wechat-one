@@ -1,0 +1,149 @@
+<view>
+  <!-- 环图 -->
+  <view class="ring">
+
+    <view class="text">
+      <text class="symbol">︱</text>
+      <text class="left">成长报告完成情况分布</text>
+    </view>
+
+    <view class="Information">
+      <ec-canvas class="ringCharts" id="ringchart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+
+
+      <view class="stateCharts">
+        <text class="state">状态</text>
+        <view class="name" wx:for="{{ring}}">
+          <text style="background-color: {{item.color}};" class="round"></text>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+      <view class="stateCharts">
+        <text class="state">人数</text>
+        <text class="name" wx:for="{{ring}}">{{item.data}}人</text>
+      </view>
+      <view class="stateCharts">
+        <text class="state">占比</text>
+        <text class="name" wx:for="{{ring}}">{{item.data/50*100}}%</text>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 学生名单 -->
+  <view class="list">
+    <view class="one">
+      <text class="left">已完成学生名单</text>
+      <text class="right" bindtap="click">分享</text>
+      <view class="nameList">
+      <!-- 内容区 -->
+      <view class="nameChart" wx:for="{{finish}}">
+        <text class="name">{{item}}</text>
+      </view>
+      <!-- <view class="nameChart">
+        <text class="name">张宇尚</text>
+      </view> -->
+    </view>
+    </view>
+    <view class="one">
+      <text class="left">进行中学生名单</text>
+      <text class="right" bindtap="click">分享</text>
+      <view class="nameList">
+      <!-- 内容区 -->
+      <view class="nameChart" wx:for="{{doing}}">
+        <text class="name">{{item}}</text>
+      </view>
+      <!-- <view class="nameChart">
+        <text class="name">张宇尚</text>
+      </view> -->
+    </view>
+    </view>
+    <view class="one">
+      <text class="left" >未开始学生名单</text>
+      <text class="right" bindtap="click">分享</text>
+      <view class="nameList">
+      <!-- 内容区 -->
+      <view class="nameChart" wx:for="{{nostart}}">
+        <text class="name">{{item}}</text>
+      </view>
+      <!-- <view class="nameChart">
+        <text class="name">张宇尚</text>
+      </view> -->
+    </view>
+    </view>
+
+    <view class="mask" wx:if="{{show}}">
+      <view class="windows" wx:if="{{showone}}">
+        <view class="title">
+          <text style="color: rgb(10, 10, 10); font-size: 14px;">分享类型</text>
+        </view>
+
+        <radio-group class="radio-group">
+          <label class="radio" bindtap="all">
+            <radio value="1" checked>
+              <text>全部分享</text>
+            </radio>
+          </label>
+          <label class="radio" bindtap="one">
+            <radio value="0">
+              <text>单个通知</text>
+            </radio>
+          </label>
+        </radio-group>
+
+        <view class="bottom-two">
+          <text class="yes" bindtap="clickme">确定</text>
+          <text class="no" bindtap="noshowModalTwo">取消</text>
+        </view>
+      </view>
+
+      <!--底部下拉弹框 -->
+      <!--弹出框  -->
+      <view class="commodity_attr_box" wx:if="{{showtwo}}">
+        <!--自定义弹窗内容-->
+        <!-- 两个图标和按钮包裹器 -->
+        <view class="iconContainer">
+          <!-- 图标一-->
+          <view class="icons">
+            <icon class="iconfont icon-weixin"></icon>
+            <text bindtap="share">分享给好友</text>
+          </view>
+          <!-- 图标二-->
+          <view class="icons">
+            <icon class="iconfont icon-shejiaotubiao-02"></icon>
+            <text bindtap="share">分享朋友圈</text>
+          </view>
+          <!-- 按钮包裹器 -->
+          <view class="btnContainer">
+            <button class="btn1" bindtap="noshowModalTwo">取消</button>
+          </view>
+        </view>
+      </view>
+
+      <view class="notice" wx:if="{{showthree}}">
+
+        <view class="title">
+          <text style="color: rgb(10, 10, 10); font-size: 14px;">选择需要通知的学生</text>
+        </view>
+
+        <view class="radio-group">
+          <radio-group class="radio-one" wx:for="{{name}}">
+            <radio>
+              <text>{{item.name}}</text>
+            </radio>
+          </radio-group>
+        </view>
+
+        <view class="bottom-two">
+          <text class="yes" bindtap="clickname">确定</text>
+          <text class="no" bindtap="noshowModalTwo">取消</text>
+        </view>
+
+      </view>
+
+    </view>
+
+
+
+  </view>
+</view>

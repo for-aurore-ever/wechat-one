@@ -1,0 +1,55 @@
+<!--pages/HeadTeacher/myInfo/myInfo.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<!--pages/my-message/my-message.wxml-->
+<view class="messageComtainer">
+
+<view class="topMessage">
+  <view class="header">
+      <text class="text">头像</text>
+      <view>
+        <image src="{{config.host}}/profile/static/images/tx.jpg"></image>
+        <text class="text icon">></text>
+      </view>
+    </view>
+    <view class="nameTop">
+      <text class="text">姓名</text>
+      <view>
+        <text class="name">张三</text>
+      </view>
+    </view>
+</view>
+<view class="topMessage">
+  <view class="header">
+      <text class="text">我的账号</text>
+      <view>
+        <text class="name">188xxxx8888</text>
+      </view>
+    </view>
+    <view class="nameTop">
+      <text class="text">修改密码</text>
+      <view>
+        <text class="icon">></text>
+      </view>
+    </view>
+</view>
+<view class="topMessage">
+  <view class="header">
+      <text class="text">我的身份</text>
+      <view>
+        <text class="name">一年级3班-班主任</text>
+      </view>
+    </view>
+    <view class="nameTop">
+      <text class="text">我的身份2</text>
+      <view>
+        <text class="name">一年级3班-语文老师</text>
+      </view>
+    </view>
+    <view class="nameTop">
+      <text class="text">我的身份3</text>
+      <view>
+        <text class="name">一年级4班-语文老师</text>
+      </view>
+    </view>
+</view>
+</view>

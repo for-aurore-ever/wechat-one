@@ -1,0 +1,382 @@
+<!--pages/make1/make1.wxml-->
+<!--pages/growReport/report.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Continer">
+
+  <!--上半区导航页面-->
+  <view class="gander">
+    <view class="gender">
+      <text class="semester">{{growMessageThis.semesterName}}</text>
+    </view>
+    <view class="changes">
+      <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+      <text class="change">形式切换</text>
+    </view>
+  </view>
+  <!--下半区展示区域页面-->
+  <scroll-view class="recommendScroll" enable-flex >
+  
+    <!--这就是我-->
+    <view class="Countainer">
+    <view class="background">
+<image  src="{{config.host}}/profile/static/images/my.png"></image>
+<view class="photo">
+<view  class="img" wx:if="{{imgs !=''}}">
+    <image  src="{{imgs}}" data-index="{{imgs}}" bindtap="ceshi" class="img"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index}}" catchtap="deleteImg"></text> -->
+    <!-- <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang"></image> -->
+</view>
+<view wx:else class="upload-img-btn" bindtap="chooseImg">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+    </view>
+    </view>
+
+    <!--我和我的伙伴-->
+    <view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/partner.png"></image>
+<view class="photo1">
+  <view  class="img" wx:if="{{imgs2 !=''}}">
+    <image wx:for="{{imgs2}}" wx:for-item="item2"  src="{{item2}}" data-index="index2" class="img2"></image>
+    <!-- <text class="iconfont icon-cuowu"  catchtap="deleteImg2"></text> -->
+    <!-- <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang1"></image> -->
+  </view>
+  <view  class="title" wx:else bindtap="chooseImg2">
+    <!-- <text class="add">+</text> -->
+    <text class="addphoto">暂未上传</text>
+  </view>
+</view>
+<view class="photo2"  >
+  <view  class="img" wx:if="{{imgs3 !=''}}">
+    <image wx:for="{{imgs3}}" wx:for-item="item3" src="{{item3}}" data-index="index3" class="img2"></image>
+    <!-- <text class="iconfont icon-cuowu"  catchtap="deleteImg3"></text> -->
+    <!-- <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang2"></image> -->
+</view>
+<view class="title" wx:else bindtap="chooseImg3">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+</view>
+    </view>
+
+    <!--我写的字-->
+    <view class="Countainer">
+    <view class="background">
+<image  src="{{config.host}}/profile/static/images/myWord.png"></image>
+<view class="photo">
+<view  class="img" wx:if="{{imgs1 !=''}}">
+    <image wx:for="{{imgs1}}" wx:for-item="item1" src="{{item1}}" data-index="{{index1}}" class="img3"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index1}}" catchtap="deleteImg1"></text> -->
+    <image src="{{config.host}}{{growseal}}" class="yingzhang4" ></image>
+</view>
+<view wx:else class="upload-img-btn" bindtap="chooseImg1">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+     </view>
+    </view>
+
+    <!--我的作业-->
+    <view class="Countainer">
+    <view class="background">
+<image  src="{{config.host}}/profile/static/images/zuoye.png"></image>
+<view class="photo">
+<view  class="img" wx:if="{{imgs4 !=''}}">
+    <image wx:for="{{imgs4}}" wx:for-item="item4" src="{{item4}}" data-index="{{index4}}" class="img4"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index4}}" catchtap="deleteImg4"></text> -->
+    <image src="{{config.host}}{{growseal}}" class="yingzhang5" ></image>
+</view>
+<view wx:else class="upload-img-btn" bindtap="chooseImg4">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+     </view>
+    </view>
+ 
+    <!--我的作文-->
+    <view class="Countainer">
+    <view class="background">
+<image  src="{{config.host}}/profile/static/images/zuowen.png"></image>
+<view class="photo">
+<view  class="img" wx:if="{{imgs5 !=''}}">
+    <image wx:for="{{imgs5}}" wx:for-item="item5" src="{{item5}}" data-index="{{index5}}" class="img5"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index5}}" catchtap="deleteImg5"></text> -->
+    <image src="{{config.host}}{{growseal}}" class="yingzhang5" ></image>
+</view>
+<view wx:else class="upload-img-btn" bindtap="chooseImg5">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+     </view>
+    </view> 
+     
+    <!--我的试卷-->
+    <view class="Countainer">
+    <view class="background">
+<image  src="{{config.host}}/profile/static/images/pepar.png"></image>
+<view class="photo">
+<view  class="img" wx:if="{{imgs6 !=''}}">
+    <image wx:for="{{imgs6}}" wx:for-item="item6" src="{{item6}}" data-index="{{index6}}" class="img5"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index6}}" catchtap="deleteImg6"></text> -->
+    <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang5" ></image>
+</view>
+<view wx:else class="upload-img-btn" bindtap="chooseImg6">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+     </view>
+    </view> 
+
+    <!--我参加的活动-->
+    <view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/active.png"></image>
+<view class="photo1">
+  <view  class="img" wx:if="{{imgs7 !=''}}">
+    <image wx:for="{{imgs7}}" wx:for-item="item7"  src="{{item7}}" data-index="index7" class="img2"></image>
+    <!-- <text class="iconfont icon-cuowu"  catchtap="deleteImg7"></text> -->
+    <!-- <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang2"></image> -->
+  </view>
+  <view  class="title" wx:else bindtap="chooseImg7">
+    <!-- <text class="add">+</text> -->
+    <text class="addphoto">暂未上传</text>
+  </view>
+</view>
+<view class="photo2"  >
+  <view  class="img" wx:if="{{imgs8 !=''}}">
+    <image wx:for="{{imgs8}}" wx:for-item="item8" src="{{item8}}" data-index="index8" class="img2"></image>
+    <!-- <text class="iconfont icon-cuowu"  catchtap="deleteImg8"></text> -->
+    <!-- <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang2"></image> -->
+</view>
+<view class="title" wx:else bindtap="chooseImg8">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+</view>
+    </view>
+    
+
+
+  <!--学生素养报告单-->
+<view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/achieve.png"></image>
+</view>
+<view class="photo5">
+<image class="award1" src="{{config.host}}/profile/static/images/achieve1.png"></image>
+<!-- <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang7"></image> -->
+<view class="nameclass">
+<text>{{suzhiReport['班级']}}</text>
+<text>{{suzhiReport['学生姓名']}}</text>
+</view>
+<view class="heightweight">
+<text class="height">{{suzhiReport['身高']}}</text>
+<text class="weight">{{suzhiReport['体重']}}</text>
+<view class="eye">
+<text>{{suzhiReport['左眼']}}</text>
+<text>{{suzhiReport['右眼']}}</text>
+</view>
+</view>
+<view class="score">
+<text>{{suzhiReport['成绩']['语文']}}</text>
+<text>{{suzhiReport['成绩']['数学']}}</text>
+<text>{{suzhiReport['成绩']['英语']}}</text>
+<text>{{suzhiReport['成绩']['科学']}}</text>
+</view>
+<view class="sum">
+<text>{{suzhiReport['综合评价等第']['语文']}}</text>
+<text>{{suzhiReport['综合评价等第']['数学']}}</text>
+<text>{{suzhiReport['综合评价等第']['英语']}}</text>
+<text>{{suzhiReport['综合评价等第']['科学']}}</text>
+</view>
+<view class="subject">
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['道德与法']}}</text>
+<text>{{suzhiReport['综合评价等第']['体育']}}</text>
+</view>
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['音乐']}}</text>
+<text>{{suzhiReport['综合评价等第']['信息']}}</text>
+</view>
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['美术']}}</text>
+<text>{{suzhiReport['综合评价等第']['综合实践']}}</text>
+</view>
+</view>
+<view class="schoolshow">
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['听课专注']}}</text>
+<text>{{suzhiReport['综合评价等第']['做事负责']}}</text>
+</view>
+<view class="subject1">
+<text>{{suzhiReport['综合评价等第']['学习主动']}}</text>
+<text>{{suzhiReport['综合评价等第']['同学合作']}}</text>
+</view>
+</view>
+</view>
+</view>
+
+
+
+
+    <!--老师寄语-->
+    <view class="Countainer">
+        <view class="background">
+            <image   src="{{config.host}}/profile/static/images/word.png"></image>
+            <view class="photo3">
+                <text>{{headteacherWord}}</text>
+                <image class="img1" src="{{config.host}}/profile/static/images/word.png"></image>
+            </view>
+            <view class="photo4"  >
+                <text>{{ teacherWord}}</text>
+                <image class="img22"  src="{{config.host}}/profile/static/images/word.png"></image>
+            </view>
+        </view>
+    </view>
+
+
+
+    <!--小伙伴的话-->
+    <view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/friend.png"></image>
+</view>
+
+<view class="photo15">
+  <image class="award10" src="{{wordimg1?wordimg1:config.host+'/profile/static/images/shupepar.png'}}"></image>
+  <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang2"></image>
+  <!--textarea标签实现多行文本框-->
+  <!-- <textarea rows="100" cols="3" id="friend1"></textarea> -->
+  <!-- <input type="text" class="name1"/> -->
+</view>
+<view class="photo16">
+  <image class="award11" src="{{wordimg2?wordimg2:config.host+'/profile/static/images/shupepar.png'}}"></image>
+  <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang2"></image>
+  <!-- <textarea rows="100" cols="3" id="friend2"></textarea> -->
+  <input type="text" class="name2"/>
+</view>
+<view class="photo17">
+  <image class="award12" src="{{wordimg2?wordimg2:config.host+'/profile/static/images/shupepar.png'}}"></image>
+  <image src="{{config.host}}/profile/static/images/growseal.png" class="yingzhang2"></image>
+  <!-- <textarea rows="100" cols="3" id="friend3"></textarea> -->
+  <input type="text" class="name3"/>
+</view>
+</view>
+    
+
+    <!--我的荣誉-->
+<view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/honor.png"></image>
+</view>
+
+<view class="photo15">
+  <image class="award10" src="{{config.host+'/profile/static/images/ward.png'}}"></image>
+  <image class="word1" src="{{config.host}}{{list[0]}}" type="text"/>
+  <input type="text" class="day1"/>
+</view>
+<view class="photo16">
+  <image class="award11" src="{{config.host+'/profile/static/images/ward.png'}}"></image>
+  <image class="word2" src="{{config.host}}{{list[1]}}" type="text"/>
+  <input type="text" class="day2"/>
+</view>
+<view class="photo17">
+  <image class="award12" src="{{config.host+'/profile/static/images/ward.png'}}"></image>
+  <image class="word3" src="{{config.host}}{{list[2]}}" type="text"/>
+  <input type="text" class="day3"/>
+</view>
+</view>
+
+    <!--我的小结-->
+    <view class="Countainer">
+<view class="background">
+<image  src="{{config.host}}/profile/static/images/xiao.png"></image>
+<view class="photo10"  >
+  <view  class="img" wx:if="{{imgs9 !=''}}">
+    <image wx:for="{{imgs9}}" wx:for-item="item9"  src="{{item9}}" data-index="index9"  class="img6"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index9}}" catchtap="deleteImg9"></text> -->
+</view>
+<view  class="title" wx:else bindtap="chooseImg9">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+<view class="photo11"  >
+  <view  class="img" wx:if="{{imgs10 !=''}}">
+    <image wx:for="{{imgs10}}" wx:for-item="item10" src="{{item10}}" data-index="index10" class="img7"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index10}}" catchtap="deleteImg10"></text> -->
+</view>
+<view class="title" wx:else bindtap="chooseImg10">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+<view class="photo12"  >
+  <view  class="img" wx:if="{{imgs11 !=''}}">
+    <image wx:for="{{imgs11}}" wx:for-item="item11" src="{{item11}}" data-index="index11" class="img8"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index11}}" catchtap="deleteImg11"></text> -->
+</view>
+<view class="title" wx:else bindtap="chooseImg11">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+</view>
+    </view>
+
+    <!--我的十能成长目录-->
+    <view class="Countainer">
+    <view class="background">
+<image  src="{{config.host}}/profile/static/images/mulu.png"></image>
+<view class="photo">
+<view  class="img" wx:if="{{imgs12 !=''}}">
+    <image wx:for="{{imgs12}}" wx:for-item="item12" src="{{config.host+'/getFile?name='+item12}}" data-index="{{index12}}" class="img"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index12}}" catchtap="deleteImg12"></text> -->
+</view>
+<view wx:else class="upload-img-btn" bindtap="chooseImg12">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+     </view>
+    </view> 
+
+    <!--个性-->
+
+
+    <view class="Countainer">
+    <view class="background">
+<image  src="{{config.host}}/profile/static/images/personal.png"></image>
+<view class="photo">
+<view  class="img" wx:if="{{imgs13 !=''}}">
+    <image  src="{{config.host+'/getFile?name='+imgs13}}" data-index="{{index12}}" class="img"></image>
+    <!-- <text class="iconfont icon-cuowu" data-index="{{index12}}" catchtap="deleteImg12"></text> -->
+</view>
+<view wx:else class="upload-img-btn" bindtap="chooseImg12">
+<!-- <text class="add">+</text> -->
+<text class="addphoto">暂未上传</text>
+</view>
+</view>
+     </view>
+    </view>
+    <!-- <view class="Countainer">
+    <view class="background">
+<image  src="/static/images/个性.png"></image>
+<view>
+</view>
+    </view>
+    </view> -->
+
+
+
+  </scroll-view>
+</view>

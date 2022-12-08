@@ -1,0 +1,24 @@
+<!--pages/childInfo/childInfo.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="check">
+<view class="header">
+<view class="img" bindtap="hpic">
+  <image class="img1" wx:if="{{messageSrc=='' && message.sex==0}}" src="../../../static/images/boy.png" ></image>
+  <image class="img1" wx:if="{{messageSrc=='' && message.sex==1}}" src="../../../static/images/girl.png" ></image>
+  <image class="img1" wx:if="{{messageSrc!==''}}" src="{{config.host+'/getFile?name='+messageSrc}}" ></image>
+</view>
+  <image src="{{message.sex==0?config.host+'/profile/static/images/nanhai1.png':'../../../static/images/nvsheng.png'}}" class="sex"></image>
+</view>
+<view class="message1">
+<text class="name">孩子姓名</text>
+<text class="name1">{{message.stuName}}</text>
+</view>
+<view class="message1">
+<text class="name">孩子班级</text>
+<text class="name1">{{message.gradeId}}</text>
+</view>
+<view class="message1">
+<text class="name">孩子身份证号</text>
+<text class="name1">{{message.idCard}}</text>
+</view>
+</view>

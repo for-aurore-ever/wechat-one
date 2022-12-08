@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="message" wx:for="{{childMessage}}"  >
+      <text class="text" >{{item.stuName}}的图库</text>
+      <text class="iconfont icon-jinru icon1" style="color:#999999" bindtap="goStudentpic" data-item="{{item}}"></text>
+    </view>
+</view>

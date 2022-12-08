@@ -1,0 +1,15 @@
+<!--pages/HeadTeacher/2excellent/2excellent.wxml-->
+<view class="Container">
+    <view class="list">
+        <text>{{name1}} :</text>
+    </view>
+    <!-- 内容区 -->
+    <view class="nameContainer">
+        <view class="namelist" wx:for="{{details}}">
+            <text>{{item}}</text>
+        </view>
+    </view>
+    <view>
+      <button class='btn' bindtap="goExcellent" >调整</button>
+    </view>
+</view>

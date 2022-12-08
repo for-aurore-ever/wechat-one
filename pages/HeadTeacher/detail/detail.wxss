@@ -1,0 +1,128 @@
+/* pages/HeadTeacher/detail/detail.wxss */
+page{
+  background-color:#f7f8fa;
+}
+
+.student1{
+  display: flex;
+  margin: 5rpx 0rpx 0rpx 0rpx;
+  height:180rpx;
+  background-color: #fff;
+}
+/*头像*/
+.img1{
+  margin:25rpx 0 0 15rpx; 
+  height: 130rpx;
+  width: 130rpx;
+  border-radius: 50%;
+}
+/*包姓名和审核情况的盒子*/
+.info{
+  display: flex;
+  /* margin-left: 20rpx; */
+  height: 100rpx;
+  justify-content:space-between; 
+}
+/*包含姓名、审核情况、性别的盒子*/
+.stuInfo{
+  display: flex;
+  flex-direction: column;
+  width: 585rpx;
+  /* margin: 0 100rpx */
+}
+/*审核情况*/
+ .check{
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  color:#7c0000;
+  font-weight: bold;
+} 
+/*姓名*/
+.name1{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  line-height: 20rpx;
+}
+/*性别*/
+.sex{
+  height: 50rpx;
+  width: 120rpx;
+  margin-top:0rpx;
+  margin-left:15rpx;
+}
+/*基本情况框*/
+.stuInfo1{
+  background-color: #fff;
+  height: 70rpx;
+  margin: 20rpx 15rpx 5rpx 15rpx;
+}
+/*基本情况栏*/
+.info1{
+  line-height: 70rpx;
+  margin-left: 20rpx;
+  border-bottom: 6rpx solid #7c0000;
+  font-size:30rpx;
+}
+/*基本情况条*/
+.stuInfo2{
+ display: flex;
+ justify-content:space-between;
+ background-color: #fff;
+ height: 80rpx;
+ margin:0 15rpx 5rpx 15rpx;
+ line-height: 80rpx;
+}
+/*左边黑色文字*/
+.info2{
+  margin-left: 35rpx;
+  line-height:80rpx;
+}
+
+/*右边灰色文字*/
+.info3{
+  margin-right: 35rpx;
+  line-height:80rpx;
+  font-size:28rpx;
+  color:#999999;
+}
+
+/*包含两个按钮*/
+.btn{
+  display:flex;
+  /* width: 500rpx; */
+  width:610rpx;
+  padding:0 70rpx;
+}
+
+/*新增点击按钮*/
+.past{
+  /* height: 100rpx; */
+  width: 300rpx!important ;
+  margin-top:150rpx;
+  background-color:#7c0000;
+  color:white;
+  font-size:30rpx;
+  font-weight:400;
+  padding:0;
+  text-align: center; /*让文字居中*/
+  line-height: 76rpx; /*设置行高*/
+  border-radius: 50rpx 0 0 50rpx;
+}
+
+/*确定按钮*/
+.return{
+  width: 300rpx!important ;
+  margin-top:150rpx;
+  background-color:#fff;
+  color:#7c0000;
+  font-size:30rpx;
+  font-weight:400;
+  padding:0;
+  text-align: center; /*让文字居中*/
+  line-height: 76rpx; /*设置行高*/
+  border-radius: 0 50rpx 50rpx 0;
+  border:3rpx solid #7c0000;
+}
+
+

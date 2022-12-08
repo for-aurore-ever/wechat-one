@@ -1,0 +1,68 @@
+<!--pages/activity/activity.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+
+<view class="Continer">
+
+<!--上半区导航页面-->
+<view class="gander">
+  <view class="gender">
+    <text class="semester">我参加的活动</text>
+  </view>
+  <view class="changes">
+    <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+    <text class="change">形式切换</text>
+  </view>
+</view>
+ <!--下半区展示区域页面-->
+ <scroll-view class="recommendScroll" enable-flex >
+
+
+<view class="Countainer">
+  <view wx:if="{{activeList.length!==0}}">
+    <view class="background" wx:for="{{activeList}}" wx:for-item="item2">
+      <image  src="{{config.host}}/profile/static/images/active.png"></image>
+      <view class="photo1">
+        <view  class="img" >
+          <image   src="{{config.host+'/getFile?name='+item2[0]}}" data-index="index2[0]" ></image>
+          <text class="iconfont icon-cuowu"  catchtap="deleteImg2"></text>
+        </view>
+      </view>
+      <view class="photo2">
+        <view  class="img" >
+          <image   src="{{config.host+'/getFile?name='+item2[1]}}" data-index="index2[1]" ></image>
+          <text class="iconfont icon-cuowu"  catchtap="deleteImg2"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="background">
+      <image  src="{{config.host}}/profile/static/images/active.png"></image>
+      <view class="photo1">
+        <view  class="title"  bindtap="chooseImg2">
+          <text class="add">+</text>
+          <text class="addphoto">点击上传图片</text>
+          <!-- <text id="word1">2020学年第一学期</text> -->
+        </view>
+      </view>
+      <view class="photo2">
+        <view  class="title"  bindtap="chooseImg2">
+          <text class="add">+</text>
+          <text class="addphoto">点击上传图片</text>
+          <!-- <text id="word1">2020学年第一学期</text> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+</scroll-view>
+
+<!--下方导出按钮-->
+<view  class="btns">
+<button  class="submitbtn" form-type="submit" >
+导出
+</button>  
+</view>
+
+</view>

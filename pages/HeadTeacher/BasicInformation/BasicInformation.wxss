@@ -1,0 +1,22 @@
+/* pages/FacultyTeacher/BasicInformation/BasicInformation.wxss */
+page{
+  background-color:#f7f8fa;
+}
+.banji{
+  display: flex;
+  justify-content: space-between;
+  background:#ffffff ;
+  padding: 20rpx 40rpx;
+  border-top: 5rpx solid #f7f8fa ;
+  font-size: 28rpx;
+}
+.banji2{
+  color: #999fbc;
+  font-size: 25rpx;
+}
+.information1{
+  padding-top: 20rpx;
+}
+.information2{
+  padding-top: 20rpx;
+}

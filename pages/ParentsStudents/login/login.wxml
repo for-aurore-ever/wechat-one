@@ -1,0 +1,16 @@
+<view class="container">
+      <view class="userinfo">登录成长报告</view>
+      <view class= "weui-cell_input" wx:if="{{show}}">
+        <input  model:value="{{username}}"  class="weui-input"  maxlength="11" type="text" placeholder="请输入手机号"/>
+        <input  model:value="{{password}}"  class="weui-input" password type="text" placeholder="请输入密码" />
+      </view>
+      <view class="option-list">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{radioChange}}" wx:key="index">
+            <radio value="{{item.id}}" checked="{{item.checked}}" color="#fff"></radio>
+            <text>{{item.name}}</text>
+          </label>
+        </radio-group>
+      </view>
+      <button class="confirm-btn" bindtap="login">登录</button>
+</view>

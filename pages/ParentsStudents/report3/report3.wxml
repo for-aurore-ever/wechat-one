@@ -1,0 +1,47 @@
+<!--pages/ParentsStudents/report3/report3.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="continer">
+    <view class="Continer">
+        <view class="header">
+            <view class="nameContainer" wx:for="{{childMessage}}" data-item="{{item}}" data-index="{{index}}"
+                bindtap="cChildMessage">
+                <text class="name{{currentIndex==index?1:2}}">{{item.stuName}}</text>
+                <!-- <text class="name2">{{item.stuName}}</text> -->
+            </view>
+        </view>
+        <view class="changes">
+            <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+            <text class="change" bindtap="goReport1" goReport1>模式切换</text>
+        </view>
+    </view>
+    <view class="body">
+        <!-- 左边的菜单 -->
+        <view class="catemenu">
+            <view class="item {{index==cateListActiveIndex ? 'active' : ''}}" bindtap="scrollToCategory"
+                wx:for="{{reports}}" data-index="{{index}}" data-cateCount="{{item.items.length}}" wx:key="title">
+                {{item.title}}
+                <!-- {{item.items.length}} -->
+            </view>
+        </view>
+
+        <scroll-view class="reports_wrap" scroll-top="{{listViewScrollTop}}" bindscroll="cateListScrolling" scroll-y>
+            <view class="one cate" wx:for="{{reports}}" wx:key="title">
+                <view class="onedotNoActive"></view>
+                <view class="oneline"></view>
+                <view class="onemain">
+                    <view class="word">
+                        <view class="onemaintitle">{{item.title}}</view>
+                    </view>
+                    <view class="onemaincon" bindtap="pageRedirectFunc" data-itemKey="{{item.title}}">
+                        <view class="photo1">
+                            <image class="img" src="{{config.host + item.image}}"></image>
+                            <text class="word1">{{item.title}}</text>
+                            <text class="word3">{{item.enTitle}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+        </scroll-view>
+    </view>
+</view>

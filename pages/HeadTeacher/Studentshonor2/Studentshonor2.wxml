@@ -1,0 +1,16 @@
+<!--pages/HeadTeacher/Studentshonor2/Studentshonor2.wxml-->
+<!--学生荣誉学年-->
+<view class="Countainer">
+  <view class="student1" bindtap="tostudenthonor">
+  <text>2022学年第一学期</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+  <view class="student2" bindtap="tostudenthonor">
+  <text>2021学年第二学期</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+  <view class="student3" bindtap="tostudenthonor">
+  <text>2021学年第一学期</text>
+  <text class="iconfont icon-guanbi" style="color:#acacac"></text>
+  </view>
+</view>

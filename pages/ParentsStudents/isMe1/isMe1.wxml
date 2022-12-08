@@ -1,0 +1,57 @@
+<!--pages/isMe1/isMe1.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Continer">
+  <!--上半区导航页面-->
+  <view class="gander">
+    <view class="gender">
+      <text class="semester">这就是我</text>
+    </view>
+    <view class="changes">
+      <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+      <text class="change">形式切换</text>
+    </view>
+  </view>
+   <!--下半区展示区域页面-->
+   <scroll-view class="recommendScroll" enable-flex >
+  
+  <!--这就是我1-->
+  <view class="Countainer">
+    <view wx:if="{{imgList.length!==0}}">
+      <view class="background"    wx:for="{{imgList}}">
+          <image  src="{{config.host}}/profile/static/images/my.png"></image>
+          <view class="photo" >
+            <view  class="img">
+              <image  src="{{config.host+'/getFile?name='+item}}" data-index="{{index}}" ></image>
+              <!-- <text id="word1">2020学年第一学期</text> -->
+            </view>
+          </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="background">
+          <image  src="{{config.host}}/profile/static/images/my.png"></image>
+          <view class="photo">
+            <view class="upload-img-btn" catchtap="chooseImg">
+              <!-- <text class="add">+</text> -->
+              <text class="addphoto">暂无图片</text>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+</scroll-view>
+
+<!--下方导出按钮-->
+<view  class="btns">
+  <button  class="submitbtn" form-type="submit" >
+  导出
+  </button>  
+</view>
+
+</view>
+
+

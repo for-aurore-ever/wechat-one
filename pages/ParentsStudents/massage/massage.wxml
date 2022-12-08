@@ -1,0 +1,46 @@
+<!--pages/massage/massage.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<view class="Countainer">
+<view class="background">
+<image class="img1"  src="{{config.host}}/profile/static/images/36.png"></image>
+<view class="text1">
+  <text ></text>
+</view>
+<view>
+  <image class="img1111" src="{{config.host}}/profile/static/images/36.png"></image>
+</view>
+
+<view class="text2">
+  <text ></text>
+</view>
+<view>
+  <image class="img2222" src="{{config.host}}/profile/static/images/36.png"></image>
+</view>
+
+
+</view>{{headteacherWord}}
+<!-- 按钮盒子 start -->
+<view class="btnContainer">
+    <button class='btn' style="width: 80%;" bindtap="clickme">邀请任课老师</button>
+</view>
+</view>
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+<!--自定义弹窗内容-->
+    <scroll-view class="recommendScroll" enable-flex >
+        <view class="dialogContainer">
+            <view class="header">
+                <text class="cancel" bindtap="hideModal">取消</text>
+                <text class="option">选择任课老师</text>
+                <text class="yes" bindtap="postChoose">确定</text>
+            </view>
+            <view class="content" >
+                <view class="teachertype" wx:for="{{CourseMessage}}">
+                  <text bindtap="choose" data-item="{{item}}" data-index="{{index}}"  class="choose{{currentIndex==index?1:''}}">{{item.name!=null?item.name:''}}</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

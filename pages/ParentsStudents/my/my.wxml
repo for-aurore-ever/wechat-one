@@ -1,0 +1,37 @@
+<!--pages/my/my.wxml-->
+<!-- 引入底部导航栏 -->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<import src="../../tabbar/tabbar" />
+<template is="tabBar" data="{{tabBar}}" />
+
+<view class="my">
+<view class="tital">
+<image class="img" src="{{myMessageSrc==''?'../../../static/images/moren.jpg':config.host+'/getFile?name='+myMessageSrc}}"></image>
+<text class="jiazhang">家长</text>
+<text class="iconfont icon-jinru icon" style="color:#999999" bindtap="goMyInfo"></text>
+</view>
+
+<view class="message1">
+<view class="message">
+<text class="iconfont icon-haizi icon2"></text>
+<text class="text">孩子</text>
+</view>
+<text class="iconfont icon-jinru icon1" style="color:#999999" bindtap="goMyChild"></text>
+</view>
+
+<view class="message2">
+<view class="message">
+<text class="iconfont icon-tukuguanli icon2"></text>
+<text class="text">图库</text>
+</view>
+<text class="iconfont icon-jinru icon1" style="color:#999999" bindtap="goMyPics"></text>
+</view>
+
+<view class="message3">
+<view class="message">
+<text class="iconfont icon-shezhi icon2"></text>
+<text class="text">设置</text>
+</view>
+<text class="iconfont icon-jinru icon1" style="color:#999999" bindtap="goSetup"></text>
+</view>
+</view>

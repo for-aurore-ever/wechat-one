@@ -1,0 +1,20 @@
+<!-- 班主任端 -->
+<van-tabbar active="{{ active }}"  active-color="#7a0002" bind:change="onChange"
+  inactive-color="#000"
+  bind:change="onChange">
+  <van-tabbar-item wx:for="{{ list }}" wx:key="index" >
+    <image
+      slot="icon"
+      src="{{ item.normal }}"
+      mode="aspectFit"
+      style="width: 60rpx; height: 50rpx;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ item.active }}"
+      mode="aspectFit"
+      style="width: 60rpx; height: 50rpx;"
+    /> 
+    {{item.text}}
+  </van-tabbar-item>
+</van-tabbar>

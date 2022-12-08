@@ -1,0 +1,155 @@
+/* pages/massage/massage.wxss */
+.Countainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+   border: 2rpx solid rgba(245, 245, 245, 1);
+}
+.text1{
+  word-wrap:break-word;word-break:break-all;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  height: 300rpx;
+  width: 495rpx;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 220rpx;
+  font-size: 23rpx;
+}
+.text2{
+  word-wrap:break-word;word-break:break-all;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  height: 300rpx;
+  width: 495rpx;
+  left:0;top:0;right:0;
+  margin:auto;/*有了这个就自动居中了*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 630rpx;
+  font-size: 23rpx;
+}
+.img1111{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline;
+  /* background-color: antiquewhite; */
+  position: absolute;
+  bottom: 685rpx;
+  left: 525rpx;
+  z-index: 2;
+}
+.img2222{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline;
+  /* background-color: antiquewhite; */
+  position: absolute;
+  bottom: 275rpx;
+  left: 525rpx;
+  z-index: 2;
+}
+/* 背景图片 */
+.background .img1{
+  display: flex;
+  margin: 0 auto;
+  height: 1000rpx;
+  padding: 30rpx 30rpx;
+  position: relative;
+  width: 700rpx;
+  margin-bottom: 80rpx;
+}
+/*按钮区  */
+  .btn{
+    background-color: rgba(124, 0, 0, 1);
+    border: 1px solid rgba(187, 187, 187, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 32rpx;
+    font-family: PingFangSC-regular;
+    width: 80%;
+ } 
+ .btnContainer{
+   height: 100rpx;
+   width: 100%;
+   display: flex;
+   align-items: center;
+ }
+ /* 底部弹框 */
+ /*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  border-bottom: 4rpx solid rgba(187, 187, 187, 1);
+}
+/* 底部内容 */
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+}
+.header .cancel{
+  font-size: 30rpx;
+  color: rgba(153, 153, 153, 1);
+}
+.header .option{
+  font-size: 38rpx;
+  color: rgba(16, 16, 16, 1);
+}
+.header .yes{
+  font-size: 32rpx;
+  color: rgba(129, 28, 29, 1);
+}
+.recommendScroll{
+  height: 1500rpx;
+}
+.content{
+  width: 100%;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.content .teachertype{
+  margin-bottom: 30rpx;
+  font-size: 35rpx;
+}
+
+.choose1{
+  /* border: 1px solid #FE0002 ; */
+  color: #7c0000 ;
+  background: #fff;
+}
+.choose2{
+  border: none;
+  color: #333;
+  /* background: #F0F1EC; */
+}

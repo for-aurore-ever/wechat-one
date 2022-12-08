@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="userinfo">
+    登录成长报告
+  </view>
+      <view class= "weui-cell_input">
+        <input  model:value="{{username}}"  class="weui-input"  maxlength="11" type="text" placeholder="请输入手机号"/>
+        <input  model:value="{{password}}"  class="weui-input" password type="text" placeholder="请输入密码" />
+      </view>
+      <button class="confirm-btn" bindtap="login">登录</button>
+</view>
+

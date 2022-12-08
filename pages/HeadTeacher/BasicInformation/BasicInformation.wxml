@@ -1,0 +1,31 @@
+<!--pages/FacultyTeacher/BasicInformation/BasicInformation.wxml-->
+<view class="information">
+  <view class="information1">
+      <view class="banji">
+        <text>班级</text>
+        <text class="banji2">{{stuMessage['班级']}}</text>
+      </view>
+
+      <view class="banji">
+        <text>身份证</text>
+        <text class="banji2">{{stuMessage['身份证号']}}</text>
+      </view>
+    </view>
+     <view class="information2">
+      <view class="banji">
+        <text>家长姓名</text>
+        <text class="banji2">{{stuMessage.nick_name}}</text>
+      </view>
+      <view class="banji">
+        <text>手机号</text>
+        <text class="banji2">{{stuMessage.phonenumber}}</text>
+      </view>
+      <view class="banji">
+        <text>家长身份</text>
+        <text class="banji2">{{stuMessage.relation}}</text>
+      </view>
+    </view>
+
+
+    </view>
+

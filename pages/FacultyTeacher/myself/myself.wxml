@@ -1,0 +1,32 @@
+<!--pages/HeadTeacher/myself/myself.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+<import src="../../tabbar/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+<view class="Countainer">
+  <!-- 头部 -->
+    <view class="teacher">
+        <image src="{{img==''?'../../../static/images/moren.jpg':config.host+'/getFile?name='+img}}"></image>
+        <view class="name">
+            <text>教师</text>
+        </view>
+        <text class="iconfont icon-guanbi" style="color:#acacac" bindtap="goTeacherMyMessage"></text>
+    </view>
+</view>
+<!-- 学生管理头部 -->
+<view class="studentCountainer">
+    <view class="content3">
+        <view class="navcontent" bindtap="toseal">
+            <text class="iconfont icon-yinzhang"></text>
+            <text>印章</text>
+        </view>
+        <text bindtap="toseal" class="iconfont icon-guanbi" style="color:#acacac"></text>
+    </view>
+    <view class="content4">
+        <view class="navcontent">
+            <text class="iconfont icon-shezhi"></text>
+            <text>设置</text>
+        </view>
+        <text class="iconfont icon-guanbi" style="color:#acacac" bindtap="goSetup"></text>
+    </view>
+</view>
+

@@ -1,0 +1,54 @@
+<!--pages/contents/contents.wxml-->
+<!--pages/isMe1/isMe1.wxml-->
+<wxs src='../../../utils/config.wxs' module="config"> </wxs>
+
+<view class="Continer">
+
+<!--上半区导航页面-->
+<view class="gander">
+  <view class="gender">
+    <text class="semester">我的十能成长目录</text>
+  </view>
+  <view class="changes">
+    <text class="iconfont icon-jiantou_zuoyouqiehuan" style="color:#7c0000"></text>
+    <text class="change">形式切换</text>
+  </view>
+</view>
+ <!--下半区展示区域页面-->
+ <scroll-view class="recommendScroll" enable-flex >
+  <view class="Countainer">
+<view wx:if="{{growList.length!==0}}">
+    <view class="background" wx:for="{{growList}}" wx:for-item="item1">
+    <image  src="{{config.host}}/profile/static/images/mulu.png"></image>
+    <view class="photo">
+    <view  class="img" >
+        <image  src="{{config.host+'/getFile?name='+item1}}" data-index="{{index1}}" ></image>
+        <text class="iconfont icon-cuowu" data-index="{{index1}}" catchtap="deleteImg1"></text>
+    </view>
+    </view>
+    </view>
+</view>
+<view wx:else>
+    <view class="background" >
+    <image  src="{{config.host}}/profile/static/images/mulu.png"></image>
+    <view class="photo">
+    <view class="upload-img-btn" bindtap="chooseImg1">
+    <!-- <text class="add">+</text> -->
+    <text class="addphoto">暂无图片</text>
+    <input type="text" id="word1"/>
+    </view>
+    </view>
+    </view>
+</view>
+</view>
+</scroll-view>
+
+<!--下方导出按钮-->
+<view  class="btns">
+<button  class="submitbtn" form-type="submit" >
+导出
+</button>  
+</view>
+
+</view>
+
