@@ -5,7 +5,7 @@ Page({
     grade:''
   },
   onLoad(options) {
-    console.log(options)
+    console.log("20:15的测试内容")
     this.setData({
       stuMessage:JSON.parse(options.stuMessage) ,
     })
