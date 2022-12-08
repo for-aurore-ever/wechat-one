@@ -6,6 +6,7 @@ Page({
   },
   onLoad(options) {
     console.log(options)
+    console.log(options)
     this.setData({
       stuMessage:JSON.parse(options.stuMessage) ,
     })
